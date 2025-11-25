@@ -1,303 +1,418 @@
+/* Paleta principal y configuraciones base */
 :root {
-    --rojo-fresa: #FF1744;
+    --rojo-fresa: #81001a;
     --naranja-citrico: #FF6D00;
     --amarillo-limon: #FFD600;
     --verde-menta: #00E676;
     --azul-arandano: #2979FF;
     --morado-uva: #7C4DFF;
-    --rosa-chicle: #FF4081;
+    --rosa-chicle: #eda8bf;
     --blanco: #FFFFFF;
     --negro: #1A1A1A;
 }
 
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: url(../images/cursors/default.cur), auto;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+/* Fondo global */
 body {
     font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: var(--negro);
     overflow-x: hidden;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
+/* Wrapper secciones */
 .section {
     min-height: 100vh;
     width: 100%;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 32px;
+    position: relative;
     overflow: hidden;
 }
 
+/* Hero section */
 .section-rainbow {
     background: #f5f5f0;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;
-    min-height: 100vh;
-    padding: 2rem 3rem;
-    overflow: hidden;
-}
-
-.hero-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin-bottom: 2rem;
-    z-index: 10;
-    position: relative;
-    animation: fade-in-up 0.8s ease-out;
-}
-
-.hero-header-left {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 32px;
+    padding: 40px 60px;
+    min-height: 100vh;
 }
 
-.hero-year {
-    font-size: 0.9rem;
-    font-weight: 400;
-    color: var(--negro);
-    letter-spacing: 0.05em;
-}
-
-.hero-year-line {
-    margin: 0 0.5rem;
-}
-
-.hero-tagline {
-    font-size: 0.85rem;
-    font-weight: 300;
-    color: var(--negro);
-    margin-top: 0.3rem;
-}
-
-.hero-mission {
-    font-size: 0.85rem;
-    font-weight: 300;
-    color: var(--negro);
-    opacity: 0.8;
-}
-
-.hero-header-right {
+/* Header superior del hero */
+.hero-header {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 24px;
 }
 
+/* Título principal */
 .hero-slogan {
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-size: 40px;
     font-weight: 700;
-    color: var(--negro);
-    letter-spacing: 0.02em;
     text-transform: uppercase;
-    line-height: 1.1;
+    border: 4px solid var(--negro);
+    padding: 8px 16px;
+    box-shadow: 8px 8px 0 var(--negro);
+    background: #FFEB3B;
 }
 
+/* Grid hero */
 .hero-main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 3rem;
-    z-index: 10;
-    position: relative;
+    grid-template-columns: 1fr 340px;
+    gap: 32px;
+    align-items: flex-start;
+    width: 100%;
 }
 
+.hero-main-offset {
+    margin-top: 40px;
+}
+
+/* Columna izquierda hero */
 .hero-left {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-}
-
-.hero-brand {
-    font-size: clamp(5rem, 15vw, 12rem);
-    font-weight: 900;
-    font-family: Impact, 'Arial Black', sans-serif;
-    color: var(--negro);
-    line-height: 0.85;
-    letter-spacing: -0.02em;
-    margin: 0;
-    animation: fade-in-up 0.8s ease-out 0.2s both;
-}
-
-.hero-shop-link {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-.shop-all {
-    font-size: 0.9rem;
-    font-weight: 300;
-    color: var(--negro);
-    text-decoration: none;
-    transition: opacity 0.3s ease;
-}
-
-.shop-all:hover {
-    opacity: 0.6;
-}
-
-.arrow-line {
-    font-size: 1.2rem;
-    color: var(--negro);
-    font-weight: 300;
-}
-
-.hero-right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 1rem;
+    gap: 24px;
+    align-items: flex-start;
+    border-left: 6px solid var(--negro);
+    padding-left: 32px;
     position: relative;
 }
 
-.candy-showcase {
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
-    animation: fade-in-up 0.8s ease-out 0.4s both;
+/* Doble borde decorativo */
+.hero-left::before {
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: 0;
+    bottom: 0;
+    border-left: 6px solid #FFE600;
 }
 
-.showcase-candy {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease;
+/* Marca principal CHUCHES */
+.hero-brand {
+    font-size: 180px;
+    font-weight: 900;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 0.85;
+    letter-spacing: 12px;
+    text-shadow: -4px 4px 0 var(--negro), -8px 8px 0 #FFE600, -12px 12px 0 #7CF4FF;
 }
 
-.showcase-candy:hover {
-    transform: translateY(-5px) scale(1.1);
-}
-
-.candy-show-1 { background: var(--rojo-fresa); }
-.candy-show-2 { background: var(--naranja-citrico); }
-.candy-show-3 { background: var(--amarillo-limon); }
-.candy-show-4 { background: var(--verde-menta); }
-.candy-show-5 { background: var(--azul-arandano); }
-
-.candy-count {
-    font-size: 0.9rem;
-    font-weight: 300;
-    color: var(--negro);
-    opacity: 0.6;
-    margin-top: 0.5rem;
-}
-
-@keyframes fade-in-up {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
+/* Selector de colores */
 .color-nav {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
     flex-wrap: wrap;
-    margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    z-index: 10;
-    position: relative;
-    animation: fade-in-up 0.8s ease-out 0.8s both;
+    gap: 16px;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.9);
 }
 
 .color-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-decoration: none;
-    transition: transform 0.3s ease;
-    padding: 0.5rem;
-}
-
-.color-link:hover {
-    transform: translateY(-3px);
 }
 
 .color-circle {
-    width: 50px;
-    height: 50px;
+    width: 62px;
+    height: 62px;
     border-radius: 50%;
-    transition: transform 0.3s ease;
-    border: 2px solid rgba(0, 0, 0, 0.1);
+    border: 4px solid var(--negro);
+    box-shadow: 6px 6px 0 var(--negro);
+    transition: transform 0.2s ease;
 }
 
 .color-link:hover .color-circle {
-    transform: scale(1.1);
-    border-color: rgba(0, 0, 0, 0.3);
+    transform: translate(-3px, -3px);
 }
 
-.rojo { background: var(--rojo-fresa); }
-.naranja { background: var(--naranja-citrico); }
-.amarillo { background: var(--amarillo-limon); }
-.verde { background: var(--verde-menta); }
-.azul { background: var(--azul-arandano); }
-.morado { background: var(--morado-uva); }
-.rosa { background: var(--rosa-chicle); }
+.rojo {
+    background: var(--rojo-fresa);
+}
 
-.section-color {
+.naranja {
+    background: var(--naranja-citrico);
+}
+
+.amarillo {
+    background: var(--amarillo-limon);
+}
+
+.verde {
+    background: var(--verde-menta);
+}
+
+.azul {
+    background: var(--azul-arandano);
+}
+
+.morado {
+    background: var(--morado-uva);
+}
+
+.rosa {
+    background: var(--rosa-chicle);
+}
+
+/* Columna derecha hero (slider) */
+.hero-right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-self: flex-start;
+    margin-top: -135px;
+    margin-left: -40px;
+}
+
+/* Slider de equipo, referencia sacada de: https://codepen.io/rustcode/pen/MYYMrVQ */
+.worker-slider {
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     position: relative;
+}
+
+.worker-slider input {
+    position: absolute;
+    opacity: 0;
+}
+
+.worker-cards {
+    position: relative;
+    min-height: 420px;
+}
+
+/* Carta individual */
+.worker-card {
+    position: absolute;
+    inset: 0;
+    padding: 24px;
+    background: var(--blanco);
+    border: 3px solid var(--negro);
+    box-shadow: 8px 8px 0 var(--negro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.worker-highlight {
+    width: 100%;
+    height: 80px;
+    border: 3px solid var(--negro);
+}
+
+.highlight-yellow {
+    background: var(--verde-menta);
+}
+
+.highlight-pink {
+    background: #FF4FD8;
+}
+
+.highlight-cyan {
+    background: #7CF4FF;
+}
+
+.worker-avatar {
+    width: 110px;
+    height: 110px;
+    border: 3px solid var(--negro);
+    box-shadow: 4px 4px 0 var(--negro);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
+    font-size: 40px;
+    overflow: hidden;
+}
+
+.worker-avatar span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.worker-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.avatar-blue {
+    background: #49A6FF;
+}
+
+.avatar-green {
+    background: #6BFF83;
+}
+
+.avatar-yellow {
+    background: #FFD447;
+}
+
+.worker-name {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.worker-role {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.worker-bio {
+    font-size: 14px;
+    border: 2px dashed var(--negro);
+    padding: 12px;
+}
+
+/* CTA de la carta */
+.worker-cta {
+    text-decoration: none;
+    background: #FF1B89;
+    color: var(--blanco);
+    border: 3px solid var(--negro);
+    padding: 10px 22px;
+    font-weight: 700;
+    box-shadow: 6px 6px 0 var(--negro);
+    transition: transform 0.2s ease;
+}
+
+.worker-cta:hover {
+    transform: translate(-2px, -2px);
+}
+
+/* Alineación del botón Ver info con el primer círculo de navegación */
+.hero-left > .worker-cta {
+    margin-left: 16px;
+}
+
+.worker-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-btn {
+    display: none;
+    width: 46px;
+    height: 46px;
+    border: 3px solid var(--negro);
+    box-shadow: 4px 4px 0 var(--negro);
+    font-size: 22px;
+    font-weight: 800;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.nav-btn:hover {
+    transform: translate(-2px, -2px);
+}
+
+.nav-left {
+    background: #FFE600;
+    color: var(--negro);
+}
+
+.nav-right {
+    background: #FFE600;
+    color: var(--negro);
+}
+
+#worker-1:checked~.worker-cards .card-1,
+#worker-2:checked~.worker-cards .card-2,
+#worker-3:checked~.worker-cards .card-3 {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#worker-1:checked~.worker-nav .nav-left-1,
+#worker-1:checked~.worker-nav .nav-right-1,
+#worker-2:checked~.worker-nav .nav-left-2,
+#worker-2:checked~.worker-nav .nav-right-2,
+#worker-3:checked~.worker-nav .nav-left-3,
+#worker-3:checked~.worker-nav .nav-right-3 {
+    display: flex;
+}
+
+/* Bloques de sabores */
+.section-color {
+    --section-bg: var(--blanco);
+    --section-accent: var(--negro);
+    background: var(--section-bg);
+    padding: 60px 40px;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
 .fx-grid {
     width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    position: relative;
-    z-index: 2;
+    max-width: 1200px;
 }
 
+/* Contenedor interno de cada sabor */
 .fx-content {
     display: grid;
-    grid-template-columns: 1fr 1.3fr 1fr;
-    align-items: center;
-    height: 100%;
-    padding: 0 3rem;
-    max-width: 1400px;
-    margin: 0 auto;
-    width: 100%;
-    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    background: var(--blanco);
+    border: 4px solid var(--negro);
+    box-shadow: 16px 16px 0 var(--negro);
+    padding: 32px;
+    position: relative;
+}
+
+/* Placa decorativa */
+.fx-content::before {
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: 24px;
+    width: 110px;
+    height: 20px;
+    background: var(--section-accent);
+    border: 3px solid var(--negro);
+    box-shadow: 8px 8px 0 var(--negro);
+    display: block;
 }
 
 .fx-left,
 .fx-right {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 1.5rem;
-    height: 50vh;
-    overflow: hidden;
+    gap: 16px;
 }
 
 .fx-left {
     align-items: flex-start;
-    text-align: left;
 }
 
 .fx-right {
@@ -305,169 +420,182 @@ body {
     text-align: right;
 }
 
+/* Chips laterales */
 .fx-item {
-    color: rgba(255, 255, 255, 0.35);
-    font-weight: 700;
-    font-size: clamp(1rem, 2.2vw, 1.6rem);
-    transition: all 0.4s ease;
-    cursor: pointer;
-    user-select: none;
-    position: relative;
-    padding: 0.5rem 0;
-    line-height: 1.2;
-    opacity: 0.35;
+    border: 3px solid var(--negro);
+    padding: 12px 16px;
+    font-weight: 800;
+    font-size: 18px;
+    box-shadow: 6px 6px 0 var(--negro);
+    background: var(--section-accent);
+    color: var(--blanco);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
 }
 
-.fx-item:hover {
-    color: rgba(255, 255, 255, 0.8);
-    opacity: 0.8;
-    transform: translateX(8px);
+.fx-right .fx-item {
+    align-self: flex-end;
 }
 
-.fx-right .fx-item:hover {
-    transform: translateX(-8px);
-}
-
-.fx-item::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 50%;
-    transition: all 0.4s ease;
-    opacity: 0;
-}
-
-.fx-left .fx-item::before {
-    left: -16px;
-}
-
-.fx-right .fx-item::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 50%;
-    transition: all 0.4s ease;
-    opacity: 0;
-    right: -16px;
-}
-
-.fx-item:hover::before,
-.fx-item:hover::after {
-    width: 6px;
-    height: 6px;
-    opacity: 1;
-}
-
+/* Panel central con título y CTA */
 .fx-center {
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 60vh;
-    overflow: visible;
-    position: relative;
-    padding: 1rem;
-    gap: 2rem;
+    gap: 24px;
+    padding: 24px;
 }
 
 .fx-title {
-    font-size: clamp(3rem, 7.5vw, 6.5rem);
-    font-weight: 300;
-    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-    color: var(--blanco);
-    text-transform: uppercase;
-    letter-spacing: -0.01em;
+    font-size: 72px;
+    font-weight: 900;
     margin: 0;
-    line-height: 1;
-    animation: fade-in-up 0.8s ease-out;
-    white-space: nowrap;
-    word-break: keep-all;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
 }
 
+/* Botón de cada sabor */
 .section-btn {
-    display: inline-block;
-    padding: 1rem 2.5rem;
-    background: rgba(255, 255, 255, 0.2);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 32px;
+    border: 4px solid var(--negro);
+    box-shadow: 8px 8px 0 var(--negro);
+    background: var(--section-accent);
     color: var(--blanco);
     text-decoration: none;
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: 0.1em;
+    font-weight: 800;
     text-transform: uppercase;
-    border: 2px solid rgba(255, 255, 255, 0.4);
-    transition: all 0.3s ease;
-    animation: fade-in-up 0.8s ease-out 0.3s both;
+    letter-spacing: 0.1em;
+}
+
+.section-btn::after {
+    content: "↗";
+    font-size: 18px;
 }
 
 .section-btn:hover {
-    background: rgba(255, 255, 255, 0.3);
-    border-color: rgba(255, 255, 255, 0.6);
-    transform: translateY(-2px);
-}
-
-.section-amarillo .section-btn {
-    color: var(--negro);
-    background: rgba(0, 0, 0, 0.1);
-    border-color: rgba(0, 0, 0, 0.3);
-}
-
-.section-amarillo .section-btn:hover {
-    background: rgba(0, 0, 0, 0.2);
-    border-color: rgba(0, 0, 0, 0.5);
+    transform: translate(-3px, -3px);
 }
 
 .section-rojo {
-    background: linear-gradient(135deg, #FF1744 0%, #C51162 100%);
-    color: var(--blanco);
+    --section-accent: var(--rojo-fresa);
+    --section-bg: linear-gradient(135deg, #6a0317, #b51236);
 }
 
+/* Fresa */
 .section-naranja {
-    background: linear-gradient(135deg, #FF6D00 0%, #E65100 100%);
-    color: var(--blanco);
+    --section-accent: var(--naranja-citrico);
+    --section-bg: linear-gradient(135deg, #FF6D00, #ff9c33);
 }
 
 .section-amarillo {
-    background: linear-gradient(135deg, #FFD600 0%, #FFA000 100%);
-    color: var(--negro);
-}
-
-.section-amarillo .fx-item {
-    color: rgba(0, 0, 0, 0.4);
-}
-
-.section-amarillo .fx-item:hover {
-    color: rgba(0, 0, 0, 0.7);
-}
-
-.section-amarillo .fx-title {
-    color: var(--negro);
+    --section-accent: var(--amarillo-limon);
+    --section-bg: linear-gradient(135deg, #FFD600, #ffec80);
 }
 
 .section-verde {
-    background: linear-gradient(135deg, #00E676 0%, #00C853 100%);
-    color: var(--blanco);
+    --section-accent: var(--verde-menta);
+    --section-bg: linear-gradient(135deg, #00E676, #5effb2);
 }
 
 .section-azul {
-    background: linear-gradient(135deg, #2979FF 0%, #1565C0 100%);
-    color: var(--blanco);
+    --section-accent: var(--azul-arandano);
+    --section-bg: linear-gradient(135deg, #2979FF, #69a6ff);
 }
 
 .section-morado {
-    background: linear-gradient(135deg, #7C4DFF 0%, #512DA8 100%);
-    color: var(--blanco);
+    --section-accent: var(--morado-uva);
+    --section-bg: linear-gradient(135deg, #180747, #7c4dff);
 }
 
 .section-rosa {
-    background: linear-gradient(135deg, #FF4081 0%, #C2185B 100%);
-    color: var(--blanco);
+    --section-accent: var(--rosa-chicle);
+    --section-bg: linear-gradient(135deg, #eda8bf, #ffcfe1);
 }
+
+.section-amarillo .fx-item,
+.section-amarillo .section-btn {
+    color: var(--negro);
+}
+
+/* Recursos y referencias empleados (adaptados al estilo neo-brutalista candy)
+
+Hero neo-brutalista con grid + sombras:
+https://www.w3schools.com/css/css_grid.asp
+https://css-tricks.com/almanac/properties/t/text-shadow/
+
+Navegación de colores (chips circulares con box-shadow duro):
+https://www.w3schools.com/howto/howto_css_animate_buttons.asp
+https://www.w3schools.com/css/css3_shadows.asp
+
+Slider de trabajadores sin JS (inputs radio + labels):
+https://www.w3schools.com/howto/howto_css_slider.asp
+https://css-tricks.com/css-only-carousel/
+
+Tarjetas neobrutalistas con desplazamiento:
+https://uiverse.io/
+https://www.w3schools.com/cssref/css3_pr_box-shadow.php
+
+Secciones de sabores organizadas con grid responsivo:
+https://www.w3schools.com/css/css_grid_container.asp
+https://css-tricks.com/snippets/css/complete-guide-grid/
+
+Chips laterales y CTA con inline-flex:
+https://www.w3schools.com/css/css3_flexbox.asp
+https://www.smashingmagazine.com/2020/05/typography-accessibility/
+
+Fondos degradados personalizados por sabor:
+https://www.w3schools.com/css/css3_gradients.asp
+https://gradient.style/
+
+Variables CSS para paleta (root candy):
+https://www.w3schools.com/css/css3_variables.asp
+
+Transiciones suaves y microinteracciones:
+https://developer.mozilla.org/docs/Web/CSS/transition
+https://web.dev/animations-guide/
+
+Selectores :checked y hermanos (~) para el slider:
+https://www.w3schools.com/cssref/sel_checked.php
+https://www.w3schools.com/cssref/css_selectors.php
+
+Uso de labels asociados a inputs invisibles:
+https://www.w3schools.com/tags/tag_label.asp
+
+Inspiración neobrutalista (paletas dulces + layouts):
+https://neobrutalism.dev/
+https://nicelydone.club/tags/neobrutalism/
+https://dribbble.com/tags/neobrutalism
+
+Recursos generales de CSS/HTML utilizados durante el desarrollo:
+https://www.youtube.com/@programmingwithmosh
+https://www.youtube.com/@deivchoi
+https://www.youtube.com/@midudev
+
+Referencias adicionales:
+Iconografía y composiciones retro:
+https://www.behance.net/search/projects?search=neobrutalism
+
+Manual de branding candy y gradientes pastel:
+https://www.pinterest.com/search/pins/?q=candy%20neobrutalism
+
+Snippets para botones con `:before` pseudo-elementos:
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-reference-guide
+
+Tipografías bold-friendly para títulos:
+https://fonts.google.com/specimen/Archivo+Black
+
+Animaciones de hover inspiradas en “Pure CSS Neobrutal Hover”:
+https://codepen.io/search/pens?q=neobrutalism&limit=all&type=type-pens
+
+Microinteracciones para listas y chips:
+https://web.dev/learn/css/interaction/
+*/

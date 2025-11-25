@@ -1,56 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Los 7 Sabores del Arcoíris - Chuches</title>
+    <title>Los 7 Sabores Esenciales - Chuches</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <!-- Sección Inicio - Hero -->
     <section class="section section-rainbow" id="inicio">
-        <!-- Header superior -->
         <header class="hero-header">
-            <div class="hero-header-left">
-                <div class="hero-year">EST <span class="hero-year-line">—</span> 2025</div>
-                <div class="hero-tagline">Trabajo final de grupo para Lenguaje de Marcas</div>
-                <div class="hero-mission">Nuestra misión es demostrar las maravillas del HTML y el CSS</div>
-            </div>
-            <div class="hero-header-right">
-                <div class="hero-slogan">LOS 7 SABORES DEL ARCOÍRIS </div>
-            </div>
+            <div class="hero-slogan">LOS 7 SABORES ESENCIALES</div>
         </header>
 
-        <!-- Contenido principal -->
-        <div class="hero-main">
+        <div class="hero-main hero-main-offset">
             <div class="hero-left">
                 <h1 class="hero-brand">CHUCHES</h1>
-                <div class="hero-shop-link">
-                    <a href="#rojo" class="shop-all">(explorar todos)</a>
-                    <div class="arrow-line">→</div>
-                </div>
+                <nav class="color-nav">
+                    <a href="#rojo" class="color-link">
+                        <div class="color-circle rojo"></div>
+                    </a>
+                    <a href="#naranja" class="color-link">
+                        <div class="color-circle naranja"></div>
+                    </a>
+                    <a href="#amarillo" class="color-link">
+                        <div class="color-circle amarillo"></div>
+                    </a>
+                    <a href="#verde" class="color-link">
+                        <div class="color-circle verde"></div>
+                    </a>
+                    <a href="#azul" class="color-link">
+                        <div class="color-circle azul"></div>
+                    </a>
+                    <a href="#morado" class="color-link">
+                        <div class="color-circle morado"></div>
+                    </a>
+                    <a href="#rosa" class="color-link">
+                        <div class="color-circle rosa"></div>
+                    </a>
+                </nav>
+                <a class="worker-cta" href="./content/info.html">Ver info</a>
             </div>
             <div class="hero-right">
-                <div class="candy-showcase">
-                    <div class="showcase-candy candy-show-1"></div>
-                    <div class="showcase-candy candy-show-2"></div>
-                    <div class="showcase-candy candy-show-3"></div>
-                    <div class="showcase-candy candy-show-4"></div>
-                    <div class="showcase-candy candy-show-5"></div>
+                <div class="worker-slider">
+                    <input type="radio" name="worker-card" id="worker-1" checked>
+                    <input type="radio" name="worker-card" id="worker-2">
+                    <input type="radio" name="worker-card" id="worker-3">
+
+                    <div class="worker-cards">
+                        <article class="worker-card card-1">
+                            <div class="worker-highlight highlight-yellow"></div>
+                            <div class="worker-photo">
+                                <div class="worker-avatar avatar-blue">
+                                    <span><img src="./images/imagenes_slider/ferran_imagen.jpg"
+                                            alt="Ferran Cutillas"></span>
+                                </div>
+                            </div>
+                            <h3 class="worker-name">Ferran Cutillas</h3>
+                            <p class="worker-role">Estilos, Idea de subpáginas, Rojo, Naranja, Amarillo, Verde.</p>
+                            <p class="worker-bio"> Encargado de parte de los estilos y algunas subpáginas de los
+                                colores.</p>
+                        </article>
+
+                        <article class="worker-card card-2">
+                            <div class="worker-highlight highlight-pink"></div>
+                            <div class="worker-photo">
+                                <div class="worker-avatar avatar-green">
+                                    <span><img src="./images/imagenes_slider/carlos_imagen.jpg"
+                                            alt="Carlos Ordoñez"></span>
+                                </div>
+                            </div>
+                            <h3 class="worker-name">Carlos Ordoñez</h3>
+                            <p class="worker-role">Estilos, Idea de subpáginas, Azul, Morado, Rosa.</p>
+                            <p class="worker-bio"> Encargado de parte de los estilos y las subpáginas restantes.</p>
+                        </article>
+
+                        <article class="worker-card card-3">
+                            <div class="worker-highlight highlight-cyan"></div>
+                            <div class="worker-photo">
+                                <div class="worker-avatar avatar-yellow">
+                                    <span><img src="./images/imagenes_slider/jd_imagen.jpg" alt="Jesús David"></span>
+                                </div>
+                            </div>
+                            <h3 class="worker-name">Jesús David</h3>
+                            <p class="worker-role">Estilos, animaciones, Main page, Información.</p>
+                            <p class="worker-bio"> Encargado de parte de los estilos y las páginas principales y de
+                                información.</p>
+                        </article>
+                    </div>
+
+                    <div class="worker-nav">
+                        <label for="worker-3" class="nav-btn nav-left nav-left-1">‹</label>
+                        <label for="worker-2" class="nav-btn nav-right nav-right-1">›</label>
+
+                        <label for="worker-1" class="nav-btn nav-left nav-left-2">‹</label>
+                        <label for="worker-3" class="nav-btn nav-right nav-right-2">›</label>
+
+                        <label for="worker-2" class="nav-btn nav-left nav-left-3">‹</label>
+                        <label for="worker-1" class="nav-btn nav-right nav-right-3">›</label>
+                    </div>
                 </div>
-                <div class="candy-count">(7)</div>
             </div>
         </div>
-
-        <nav class="color-nav">
-            <a href="#rojo" class="color-link"><div class="color-circle rojo"></div></a>
-            <a href="#naranja" class="color-link"><div class="color-circle naranja"></div></a>
-            <a href="#amarillo" class="color-link"><div class="color-circle amarillo"></div></a>
-            <a href="#verde" class="color-link"><div class="color-circle verde"></div></a>
-            <a href="#azul" class="color-link"><div class="color-circle azul"></div></a>
-            <a href="#morado" class="color-link"><div class="color-circle morado"></div></a>
-            <a href="#rosa" class="color-link"><div class="color-circle rosa"></div></a>
-        </nav>
     </section>
 
     <!-- Sección 1: Rojo - Fresa -->
@@ -207,4 +260,5 @@
         </div>
     </section>
 </body>
+
 </html>

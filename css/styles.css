@@ -571,6 +571,28 @@ footer a:hover {
     box-shadow: 12px 12px 0 var(--negro);
 }
 
+/* Clase para enlaces sin estilo (para emojis o texto normal) */
+.enlace-sin-estilo {
+    display: inline !important;
+    padding: 0 !important;
+    background: transparent !important;
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    border: none !important;
+    box-shadow: none !important;
+    transition: none !important;
+    font-weight: inherit !important;
+    transform: none !important;
+}
+
+.enlace-sin-estilo:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    color: inherit !important;
+}
+
 /* Recursos y referencias empleados (adaptados al estilo neo-brutalista)
 
 Navegación de colores (chips circulares con box-shadow duro):

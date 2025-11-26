@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="author" content="Jesús David Cosano">
+    <title>Información del Proyecto — Los 7 Sabores Esenciales</title>
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <style>
+        :root {
+            --gris-piedra: #575757;
+            /* rojo fresa */
+            --texto: #fff;
+        }
+
+        body {
+            background: linear-gradient(180deg, var(--gris-piedra), #323232);
+            font-family: "Impact", "Arial Black", sans-serif;
+            margin: 0 auto;
+            padding: 2rem;
+            color: var(--texto);
+            cursor: url(../images/cursors/default.cur), auto;
+        }
+
+        .page {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            color: #000;
+            border: 12px solid #000;
+            box-shadow: 25px 25px 0 #000;
+            padding: 3rem;
+        }
+
+        .title-container {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.7rem 1.4rem;
+            background: var(--gris-piedra);
+            border: 6px solid #000;
+            color: #fff;
+            font-size: 1.3rem;
+            box-shadow: 8px 8px 0 #000;
+        }
+
+        h1 {
+            font-size: 5rem;
+            letter-spacing: -2px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            letter-spacing: -3px;
+            margin-bottom: 1rem;
+            border-bottom: 5px solid #000;
+        }
+
+        .panel {
+            background: #ffffff;
+            border: 6px solid #000;
+            padding: 2rem 2rem;
+            margin-top: 2rem;
+            box-shadow: 10px 10px 0 #000;
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th,
+        td {
+            border: 5px solid #000;
+            padding: 1rem;
+            text-align: left;
+            background: #ffffff;
+        }
+
+        th {
+            background: var(--gris-piedra);
+            color: #ffffff;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background: #000;
+            color: #fff;
+            border: 6px solid #fff;
+            text-decoration: none;
+            box-shadow: 10px 10px 0 #000;
+            transition: transform 0.3s ease;
+        }
+
+        .back:hover {
+            transform: translateY(-7px);
+            background: #fff;
+            color: #000;
+            border: 6px solid #000;
+            transform: translateY(7px) rotate(-2deg);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="page">
+
+        <div class="title-container">
+            <span class="tag">INFORMACIÓN</span>
+            <h1>PROYECTO</h1>
+        </div>
+
+        <p
+            style="font-family:Arial, sans-serif; font-size:1.3rem; color:#111; font-weight:700; text-transform:uppercase;">
+            TRABAJO FINAL DE GRUPO PARA LENGUAJE DE MARCAS — LOS 7 SABORES ESENCIALES
+        </p>
+
+        <section class="panel">
+            <h2>DECISIÓN DE LA TEMÁTICA</h2>
+            <p>
+                Elegimos el estilo neobrutalista como temática visual para nuestra web porque queríamos crear una experiencia 
+                impactante y memorable que destacara entre los demás proyectos. El neobrutalismo combina elementos visuales 
+                audaces como bordes gruesos, sombras duras y desplazadas, colores vibrantes y formas geométricas simples, 
+                creando una estética que evoca la nostalgia de los años 90 pero con un enfoque completamente moderno.
+            </p>
+            <p>
+                Este estilo nos permitió implementar elementos visuales distintivos como las sombras múltiples en el título 
+                principal "CHUCHES", los chips circulares con bordes gruesos en la navegación de colores, las tarjetas con 
+                efectos 3D mediante box-shadow, y los botones con desplazamiento al hacer hover. La combinación de estos elementos 
+                crea una identidad visual única y coherente en toda la web, haciendo que cada sección sea reconocible y mantenga 
+                la estética neobrutalista desde la página principal hasta las subpáginas de información.
+            </p>
+        </section>
+
+        <section class="panel">
+            <h2>ORGANIZACIÓN DEL TRABAJO</h2>
+            <p>
+                El proyecto se organizó de manera colaborativa, dividiendo las tareas según las fortalezas de cada miembro del grupo. 
+                Utilizamos una estructura modular donde cada persona se encargó de secciones específicas, pero manteniendo una 
+                comunicación constante para asegurar la coherencia visual y funcional en toda la web.
+            </p>
+            <ul>
+                <li><strong>Planificación inicial:</strong> Definimos la estructura general, paleta de colores y estilo visual.</li>
+                <li><strong>Desarrollo paralelo:</strong> Cada miembro trabajó en sus secciones asignadas simultáneamente.</li>
+                <li><strong>Revisión conjunta:</strong> Realizamos revisiones periódicas para mantener la consistencia del diseño.</li>
+                <li><strong>Integración final:</strong> Unificamos todos los componentes y ajustamos los detalles finales.</li>
+            </ul>
+        </section>
+
+        <section class="panel">
+            <h2>DISTRIBUCIÓN DE TAREAS POR MIEMBRO</h2>
+            <table>
+                <tr>
+                    <th>Miembro</th>
+                    <th>Tareas Asignadas</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td><b>Ferran Cutillas</b></td>
+                    <td>Estilos, Subpáginas, Rojo, Naranja, Amarillo</td>
+                    <td>Encargado de parte de los estilos CSS, diseño de las subpáginas de los colores rojo, naranja y amarillo, 
+                        incluyendo la estructura HTML y contenido específico de cada sabor.</td>
+                </tr>
+                <tr>
+                    <td><b>Carlos Ordoñez</b></td>
+                    <td>Estilos, Subpáginas, Verde, Azul, Morado, Rosa</td>
+                    <td>Responsable de parte de los estilos CSS y el desarrollo de las subpáginas correspondientes a los colores 
+                        verde, azul, morado y rosa, manteniendo la coherencia visual con el resto del proyecto.</td>
+                </tr>
+                <tr>
+                    <td><b>Jesús David</b></td>
+                    <td>Estilos, Animaciones, Página Principal, Página de Información</td>
+                    <td>Encargado de parte de los estilos CSS, implementación de animaciones, desarrollo de la página principal 
+                        (index.html) y creación de la página de información del proyecto.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="panel">
+            <h2>ESTRUCTURA DEL PROYECTO</h2>
+            <ul>
+                <li><strong>Página principal (index.html):</strong> Hero section con navegación por colores y slider de equipo.</li>
+                <li><strong>Secciones de sabores:</strong> Cada color tiene su propia sección con diseño neobrutalista.</li>
+                <li><strong>Subpáginas de información:</strong> Páginas detalladas para cada sabor (rojo.html, naranja.html, etc.).</li>
+                <li><strong>Página de información del proyecto:</strong> Esta página con los detalles del trabajo realizado.</li>
+                <li><strong>Estilos CSS:</strong> Archivo centralizado (styles.css) con diseño neobrutalista y variables CSS.</li>
+            </ul>
+        </section>
+
+        <section class="panel">
+            <h2>TECNOLOGÍAS UTILIZADAS</h2>
+            <ul>
+                <li><strong>HTML5:</strong> Estructura semántica y accesible del contenido.</li>
+                <li><strong>CSS3:</strong> Estilos avanzados con variables CSS, grid, flexbox y animaciones.</li>
+                <li><strong>Diseño neobrutalista:</strong> Bordes gruesos, sombras duras y colores vibrantes.</li>
+                <li><strong>Sin JavaScript:</strong> Slider funcional usando solo CSS (inputs radio + labels).</li>
+                <li><strong>Responsive design:</strong> Adaptación a diferentes tamaños de pantalla.</li>
+            </ul>
+        </section>
+
+        <a href="../index.html" class="back">← Volver al índice</a>
+
+    </div>
+</body>
+
+</html>

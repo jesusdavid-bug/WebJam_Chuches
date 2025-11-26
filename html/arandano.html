@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="author" content="Carlos Ordonez Diaz">
+    <title>Arándano - Sabor Azul</title>
+
+    <style>
+        :root {
+            --azul-arandano: #2979FF;
+            --texto: #fff;
+        }
+
+        body {
+            background: linear-gradient(180deg, var(--azul-arandano), #1c4bbf);
+            font-family: "Impact", "Arial Black", sans-serif;
+            margin: 0 auto;
+            padding: 2rem;
+            color: var(--texto);
+            font-weight: bolder;
+            cursor: url(../images/cursors/default.cur), auto;
+        }
+
+        .page {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            color: #000;
+            border: 12px solid #000;
+            box-shadow: 25px 25px 0 #000;
+            padding: 3rem;
+        }
+
+        .title-container {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            font-weight: normal;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.7rem 1.4rem;
+            background: var(--azul-arandano);
+            border: 6px solid #000;
+            color: #fff;
+            font-size: 1.3rem;
+            box-shadow: 8px 8px 0 #000;
+            transform: rotate(2deg);
+        }
+
+        h1 {
+            font-size: 5rem;
+            letter-spacing: -2px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 2rem;
+            letter-spacing: -3px;
+            margin-bottom: 1rem;
+            border-bottom: 5px solid #000;
+            margin: 0;
+        }
+
+        .image-banner {
+            width: 100%;
+            height: 200px;
+            border: 10px solid #000;
+            box-shadow: 12px 12px 0 #000;
+            margin: 2rem auto;
+        }
+
+        .image-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .panel {
+            background: #fff;
+            border: 6px solid #000;
+            padding: 2rem 2rem;
+            margin-top: 2rem;
+            box-shadow: 10px 10px 0 #000;
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th,
+        td {
+            border: 5px solid #000;
+            padding: 1rem;
+            text-align: left;
+            background: #fff;
+        }
+
+        th {
+            background: var(--azul-arandano);
+            color: #fff;
+        }
+
+        .img-container {
+            margin-top: 1.5rem;
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+        }
+
+        .img-container img {
+            width: 180px;
+            height: 120px;
+            object-fit: cover;
+            border: 4px solid #000;
+            box-shadow: 6px 6px 0 #000;
+            transition: transform 0.1s ease;
+        }
+
+        .img-container img:hover {
+            transform: scale(1.2) rotate(2deg);
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background: #000;
+            color: #fff;
+            border: 6px solid #fff;
+            text-decoration: none;
+            box-shadow: 10px 10px 0 #000;
+            transition: transform 0.1s ease;
+        }
+
+        .back:hover {
+            transform: translateY(7px) rotate(-2deg);
+            background-color: #fff;
+            color: #000;
+            border: 6px solid #000;
+        }
+
+        .opiniones .op {
+            border-left: 10px solid var(--azul-arandano);
+            padding-left: 1rem;
+            margin: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+
+        <div class="title-container">
+            <span class="tag">AZUL - ARÁNDANO</span>
+            <h1>ARÁNDANO</h1>
+        </div>
+
+        <p class="title-container">
+            EL SABOR MÁS MISTERIOSO, FRUTAL Y EXÓTICO DEL MUNDO DE LAS CHUCHES.
+        </p>
+
+        <div class="image-banner">
+            <img src="../images/arandano/arandanos_banner.png" alt="Plantas de Arándano">
+        </div>
+
+        <section class="panel">
+            <h2>DESCRIPCIÓN</h2>
+            <p>
+                El sabor arándano destaca por su mezcla perfecta entre dulzor suave y un toque ácido característico.
+                Su tono azul vibrante lo convierte en uno de los sabores más llamativos y originales. Cada bocado
+                recuerda a frutos del bosque y deja una sensación afrutada y agradable que lo hace único.
+            </p>
+        </section>
+
+        <section class="panel">
+            <h2>CURIOSIDADES SOBRE EL ARÁNDANO</h2>
+            <ul>
+                <li>No es un sabor tan común, lo que lo hace especial en bolsas surtidas.</li>
+                <li>Los arándanos reales son antioxidantes muy potentes.</li>
+                <li>El color azul en chuches se asocia a magia y fantasía.</li>
+                <li>Existen variedades más dulces y otras más ácidas según su origen.</li>
+            </ul>
+        </section>
+
+        <section class="panel">
+            <h2>PERFIL DE SABOR DETALLADO</h2>
+            <table>
+                <tr>
+                    <th><b>ATRIBUTO</b></th>
+                    <th><b>VALOR</b></th>
+                    <th><b>DESCRIPCIÓN</b></th>
+                </tr>
+                <tr>
+                    <td><b>Dulzor</b></td>
+                    <td>⭐⭐⭐⭐</td>
+                    <td>Dulzor afrutado sin resultar empalagoso.</td>
+                </tr>
+                <tr>
+                    <td><b>Acidez</b></td>
+                    <td>⭐⭐⭐</td>
+                    <td>Un equilibrio perfecto entre dulce y ácido.</td>
+                </tr>
+                <tr>
+                    <td><b>Intensidad aromática</b></td>
+                    <td>⭐⭐⭐⭐</td>
+                    <td>Aroma de frutos del bosque muy presente.</td>
+                </tr>
+                <tr>
+                    <td><b>Suavidad</b></td>
+                    <td>⭐⭐⭐⭐</td>
+                    <td>Textura suave y muy agradable al masticar.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="panel">
+            <h2>TIPOS DE CHUCHES DE ARÁNDANO</h2>
+            <ul>
+                <li><strong><u>Gominolas</u>:</strong> clásicas y con un color azul intenso.</li>
+                <li><strong><u>Caramelos duros</u>:</strong> sabor más concentrado y duradero.</li>
+                <li><strong><u>Chicles afrutados</u>:</strong> mezcla entre fresco, dulce y ácido.</li>
+                <li><strong><u>Piruletas azules</u>:</strong> llamativas y muy populares entre niños.</li>
+            </ul>
+
+            <div class="img-container">
+                <img src="../images/arandano/gominolas_arandano.png" alt="gominolas arándano">
+                <img src="../images/arandano/caramelos_arandano.png" alt="caramelos arándano">
+                <img src="../images/arandano/chicles_arandano.png" alt="chicles arándano">
+                <img src="../images/arandano/piruletas_arandano.png" alt="piruletas arándano">
+                <img src="../images/arandano/chupachups_arandano.jpg" alt="chupachups_arandano">
+            </div>
+        </section>
+
+        <section class="panel opiniones">
+            <h2>OPINIONES DE CONSUMIDORES</h2>
+            <div class="op"><strong>Rafa (★★★★★):</strong> “Un sabor diferente, afrutado y muy rico.”</div>
+            <div class="op"><strong>Paula (★★★★):</strong> “Me encanta su toque ácido y el color tan llamativo.”</div>
+            <div class="op"><strong>David (★★★★★):</strong> “Mi preferido cuando quiero algo dulce pero no demasiado
+                intenso.”</div>
+        </section>
+
+        <a href="../index.html#azul" class="back">← Volver al índice</a>
+
+    </div>
+</body>
+
+</html>

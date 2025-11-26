@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="author" content="Jesús David Cosano">
+    <title>Encuesta de Sabores — Los 7 Sabores Esenciales</title>
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <style>
+        :root {
+            --gris-piedra: #575757;
+            --texto: #fff;
+        }
+
+        body {
+            background: linear-gradient(180deg, var(--gris-piedra), #323232);
+            font-family: "Impact", "Arial Black", sans-serif;
+            margin: 0 auto;
+            padding: 2rem;
+            color: var(--texto);
+            cursor: url(../images/cursors/default.cur), auto;
+        }
+
+        .page {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            color: #000;
+            border: 12px solid #000;
+            box-shadow: 25px 25px 0 #000;
+            padding: 3rem;
+        }
+
+        .title-container {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.7rem 1.4rem;
+            background: var(--gris-piedra);
+            border: 6px solid #000;
+            color: #fff;
+            font-size: 1.3rem;
+            box-shadow: 8px 8px 0 #000;
+        }
+
+        h1 {
+            font-size: 5rem;
+            letter-spacing: -2px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            letter-spacing: -3px;
+            margin-bottom: 1rem;
+            border-bottom: 5px solid #000;
+        }
+
+        .panel {
+            background: #ffffff;
+            border: 6px solid #000;
+            padding: 2rem 2rem;
+            margin-top: 2rem;
+            box-shadow: 10px 10px 0 #000;
+            font-family: Arial, sans-serif;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background: #000;
+            color: #fff;
+            border: 6px solid #fff;
+            text-decoration: none;
+            box-shadow: 10px 10px 0 #000;
+            transition: transform 0.1s ease;
+        }
+
+        .back:hover {
+            transform: translateY(-7px);
+            background: #fff;
+            color: #000;
+            border: 6px solid #000;
+            transform: translateY(7px) rotate(-2deg);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #000;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 6px solid #000;
+            background: #fff;
+            font-family: Arial, sans-serif;
+            font-size: 1rem;
+            box-shadow: 8px 8px 0 #000;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            transform: translate(4px, 4px);
+            box-shadow: 4px 4px 0 #000;
+        }
+
+        textarea {
+            min-height: 100px;
+        }
+
+        .radio-group,
+        .checkbox-group {
+            margin-top: 0.5rem;
+        }
+
+        .radio-group label,
+        .checkbox-group label {
+            display: block;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            border: 4px solid #000;
+            background: #fff;
+            box-shadow: 6px 6px 0 #000;
+            cursor: pointer;
+        }
+
+        .radio-group label:hover,
+        .checkbox-group label:hover {
+            transform: translate(3px, 3px);
+            box-shadow: 3px 3px 0 #000;
+        }
+
+        .radio-group label:active,
+        .checkbox-group label:active {
+            transform: translate(5px, 5px);
+            box-shadow: 1px 1px 0 #000;
+        }
+
+        .submit-btn {
+            padding: 1rem 2rem;
+            background: var(--gris-piedra);
+            color: #fff;
+            border: 6px solid #000;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 10px 10px 0 #000;
+        }
+
+        .submit-btn:hover {
+            transform: translate(5px, 5px);
+            box-shadow: 5px 5px 0 #000;
+        }
+
+        .submit-btn:active {
+            transform: translate(8px, 8px);
+            box-shadow: 2px 2px 0 #000;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="page">
+
+        <div class="title-container">
+            <span class="tag">ENCUESTA</span>
+            <h1>SABORES</h1>
+        </div>
+
+        <section class="panel">
+            <h2>ENCUESTA DE SABORES FAVORITOS</h2>
+            <p style="margin-bottom: 2rem;">
+                ¡Ayúdanos a conocer tus preferencias! Completa esta encuesta sobre tus <em>chucherías favoritas</em> y
+                comparte tu opinión sobre los <u>7 sabores esenciales</u>.
+            </p>
+            <form>
+                <div class="form-group">
+                    <label for="nombre">NOMBRE</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>¿CUÁL ES TU SABOR FAVORITO?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="sabor" value="rojo" required> ROJO — Fresa, cereza,
+                            sandía</label>
+                        <label><input type="radio" name="sabor" value="naranja" required> NARANJA — Naranja, melocotón,
+                            mango</label>
+                        <label><input type="radio" name="sabor" value="amarillo" required> AMARILLO — Limón, plátano,
+                            piña</label>
+                        <label><input type="radio" name="sabor" value="verde" required> VERDE — Manzana, uva,
+                            kiwi</label>
+                        <label><input type="radio" name="sabor" value="azul" required> AZUL — Arándano, mora
+                            azul</label>
+                        <label><input type="radio" name="sabor" value="morado" required> MORADO — Uva, ciruela,
+                            arándano</label>
+                        <label><input type="radio" name="sabor" value="rosa" required> ROSA — Fresa, frambuesa,
+                            pomelo</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>¿QUÉ TIPO DE CHUCHERÍAS PREFIERES?</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="tipo" value="gominolas"> GOMINOLAS — Ositos, gusanos,
+                            aros</label>
+                        <label><input type="checkbox" name="tipo" value="caramelos"> CARAMELOS — Duros, blandos,
+                            ácidos</label>
+                        <label><input type="checkbox" name="tipo" value="chicles"> CHICLES — Burbujas, tiras,
+                            bolas</label>
+                        <label><input type="checkbox" name="tipo" value="chocolate"> CHOCOLATE — Tabletas, bombones,
+                            huevos</label>
+                        <label><input type="checkbox" name="tipo" value="regaliz"> REGALIZ — Negro, rojo, tiras</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="intensidad">INTENSIDAD DE SABOR PREFERIDA</label>
+                    <select id="intensidad" name="intensidad" required>
+                        <option value="">SELECCIONA UNA OPCIÓN</option>
+                        <option value="suave">SUAVE — Sabores delicados y sutiles</option>
+                        <option value="medio">MEDIO — Equilibrio perfecto</option>
+                        <option value="intenso">INTENSO — Sabores fuertes y marcados</option>
+                        <option value="muy-intenso">MUY INTENSO — Explosión de sabor</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="comentarios">COMENTARIOS ADICIONALES</label>
+                    <textarea id="comentarios" name="comentarios"
+                        placeholder="Cuéntanos sobre tus chucherías favoritas, recuerdos de la infancia, o cualquier sugerencia..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">ENVIAR ENCUESTA</button>
+            </form>
+        </section>
+
+        <a href="../index.html" class="back">← Volver al índice</a>
+
+    </div>
+</body>
+
+</html>

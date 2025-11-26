@@ -11,7 +11,6 @@
     <style>
         :root {
             --gris-piedra: #575757;
-            /* rojo fresa */
             --texto: #fff;
         }
 
@@ -48,6 +47,7 @@
             color: #fff;
             font-size: 1.3rem;
             box-shadow: 8px 8px 0 #000;
+            transform: rotate(2deg);
         }
 
         h1 {
@@ -99,15 +99,42 @@
             border: 6px solid #fff;
             text-decoration: none;
             box-shadow: 10px 10px 0 #000;
-            transition: transform 0.3s ease;
+            transition: transform 0.1s ease;
         }
 
         .back:hover {
-            transform: translateY(-7px);
             background: #fff;
             color: #000;
             border: 6px solid #000;
             transform: translateY(7px) rotate(-2deg);
+        }
+
+        .iframe-container {
+            margin-top: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .iframe-wrapper {
+            border: 6px solid #000;
+            box-shadow: 10px 10px 0 #000;
+            background: #fff;
+        }
+
+        .iframe-wrapper iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            display: block;
+        }
+
+        .iframe-title {
+            padding: 0.8rem;
+            background: var(--gris-piedra);
+            color: #fff;
+            font-weight: bold;
+            border-bottom: 4px solid #000;
         }
     </style>
 
@@ -121,40 +148,64 @@
             <h1>PROYECTO</h1>
         </div>
 
-        <p
-            style="font-family:Arial, sans-serif; font-size:1.3rem; color:#111; font-weight:700; text-transform:uppercase;">
+        <p>
             TRABAJO FINAL DE GRUPO PARA LENGUAJE DE MARCAS — LOS 7 SABORES ESENCIALES
         </p>
 
         <section class="panel">
             <h2>DECISIÓN DE LA TEMÁTICA</h2>
             <p>
-                Elegimos el estilo neobrutalista como temática visual para nuestra web porque queríamos crear una experiencia 
-                impactante y memorable que destacara entre los demás proyectos. El neobrutalismo combina elementos visuales 
-                audaces como bordes gruesos, sombras duras y desplazadas, colores vibrantes y formas geométricas simples, 
-                creando una estética que evoca la nostalgia de los años 90 pero con un enfoque completamente moderno.
+                Elegimos el <em>estilo neobrutalista</em> como temática visual para nuestra web porque queríamos crear
+                una experiencia
+                impactante y memorable que destacara entre los demás proyectos. El neobrutalismo combina elementos
+                visuales
+                audaces como <u>bordes gruesos</u>, <i>sombras duras y desplazadas</i>, <mark>colores vibrantes</mark> y
+                formas geométricas simples,
+                creando una estética que evoca la nostalgia de los <small>años 90</small> pero con un enfoque
+                completamente moderno.
             </p>
             <p>
-                Este estilo nos permitió implementar elementos visuales distintivos como las sombras múltiples en el título 
-                principal "CHUCHES", los chips circulares con bordes gruesos en la navegación de colores, las tarjetas con 
-                efectos 3D mediante box-shadow, y los botones con desplazamiento al hacer hover. La combinación de estos elementos 
-                crea una identidad visual única y coherente en toda la web, haciendo que cada sección sea reconocible y mantenga 
+                Este estilo nos permitió implementar elementos visuales distintivos como las sombras múltiples en el
+                título
+                principal <u>"CHUCHES"</u>, los <em>chips circulares</em> con bordes gruesos en la navegación de
+                colores, las tarjetas con
+                efectos <i>3D</i> mediante <code>box-shadow</code>, y los botones con desplazamiento al hacer
+                <mark>hover</mark>. La combinación de estos elementos
+                crea una identidad visual única y coherente en toda la web, haciendo que cada sección sea reconocible y
+                mantenga
                 la estética neobrutalista desde la página principal hasta las subpáginas de información.
+            </p>
+            <p>
+                Además, nos inspiramos en la estética visual de la saga de videojuegos <u>Persona</u>, conocida por su
+                <em>diseño gráfico
+                    audaz</em> con <i>tipografías impactantes</i>, <mark>paletas de colores vibrantes</mark> y una
+                presentación visual que combina elementos
+                modernos con referencias <small>retro</small>. Esta influencia se refleja especialmente en el uso de
+                colores saturados, la
+                tipografía <u>bold</u> y la estructura visual de las interfaces, que complementan perfectamente el
+                estilo neobrutalista
+                elegido para el proyecto.
             </p>
         </section>
 
         <section class="panel">
             <h2>ORGANIZACIÓN DEL TRABAJO</h2>
             <p>
-                El proyecto se organizó de manera colaborativa, dividiendo las tareas según las fortalezas de cada miembro del grupo. 
-                Utilizamos una estructura modular donde cada persona se encargó de secciones específicas, pero manteniendo una 
-                comunicación constante para asegurar la coherencia visual y funcional en toda la web.
+                El proyecto se organizó de manera <em>colaborativa</em>, dividiendo las tareas según las fortalezas de
+                cada miembro del grupo.
+                Utilizamos una <u>estructura modular</u> donde cada persona se encargó de secciones específicas, pero
+                manteniendo una
+                <i>comunicación constante</i> para asegurar la coherencia visual y funcional en toda la web.
             </p>
             <ul>
-                <li><strong>Planificación inicial:</strong> Definimos la estructura general, paleta de colores y estilo visual.</li>
-                <li><strong>Desarrollo paralelo:</strong> Cada miembro trabajó en sus secciones asignadas simultáneamente.</li>
-                <li><strong>Revisión conjunta:</strong> Realizamos revisiones periódicas para mantener la consistencia del diseño.</li>
-                <li><strong>Integración final:</strong> Unificamos todos los componentes y ajustamos los detalles finales.</li>
+                <li><strong>Planificación inicial:</strong> Definimos la <em>estructura general</em>, <u>paleta de
+                        colores</u> y <i>estilo visual</i>.</li>
+                <li><strong>Desarrollo paralelo:</strong> Cada miembro trabajó en sus secciones asignadas
+                    simultáneamente.</li>
+                <li><strong>Revisión conjunta:</strong> Realizamos <mark>revisiones periódicas</mark> para mantener la
+                    consistencia del diseño.</li>
+                <li><strong>Integración final:</strong> Unificamos todos los componentes y ajustamos los <small>detalles
+                        finales</small>.</li>
             </ul>
         </section>
 
@@ -167,22 +218,27 @@
                     <th>Descripción</th>
                 </tr>
                 <tr>
-                    <td><b>Ferran Cutillas</b></td>
-                    <td>Estilos, Subpáginas, Rojo, Naranja, Amarillo</td>
-                    <td>Encargado de parte de los estilos CSS, diseño de las subpáginas de los colores rojo, naranja y amarillo, 
-                        incluyendo la estructura HTML y contenido específico de cada sabor.</td>
+                    <td>Ferran Cutillas</td>
+                    <td><b>Estilos, <i>Subpáginas</i>, <u>Rojo</u>, <u>Naranja</u>, <u>Amarillo</u></b></td>
+                    <td>Encargado de parte de los estilos CSS, diseño de las subpáginas de los colores <u>rojo</u>,
+                        <u>naranja</u> y <u>amarillo</u>,
+                        incluyendo la <em>estructura HTML</em> y contenido específico de cada sabor.</td>
                 </tr>
                 <tr>
-                    <td><b>Carlos Ordoñez</b></td>
-                    <td>Estilos, Subpáginas, Verde, Azul, Morado, Rosa</td>
-                    <td>Responsable de parte de los estilos CSS y el desarrollo de las subpáginas correspondientes a los colores 
-                        verde, azul, morado y rosa, manteniendo la coherencia visual con el resto del proyecto.</td>
+                    <td>Carlos Ordoñez</td>
+                    <td><b>Estilos, <i>Subpáginas</i>, <u>Verde</u>, <u>Azul</u>, <u>Morado</u>, <u>Rosa</u></b></td>
+                    <td>Responsable de parte de los <em>estilos CSS</em> y el desarrollo de las subpáginas
+                        correspondientes a los colores
+                        <mark>verde</mark>, <mark>azul</mark>, <mark>morado</mark> y <mark>rosa</mark>, manteniendo la
+                        coherencia visual con el resto del proyecto.
+                    </td>
                 </tr>
                 <tr>
-                    <td><b>Jesús David</b></td>
-                    <td>Estilos, Animaciones, Página Principal, Página de Información</td>
-                    <td>Encargado de parte de los estilos CSS, implementación de animaciones, desarrollo de la página principal 
-                        (index.html) y creación de la página de información del proyecto.</td>
+                    <td>Jesús David</td>
+                    <td><b>Estilos, <i>Animaciones</i>, <u>Página Principal</u>, <u>Página de Información</u></b></td>
+                    <td>Encargado de parte de los <em>estilos CSS</em>, implementación de <mark>animaciones</mark>,
+                        desarrollo de la página principal
+                        (<code>index.html</code>) y creación de la página de información del proyecto.</td>
                 </tr>
             </table>
         </section>
@@ -190,23 +246,58 @@
         <section class="panel">
             <h2>ESTRUCTURA DEL PROYECTO</h2>
             <ul>
-                <li><strong>Página principal (index.html):</strong> Hero section con navegación por colores y slider de equipo.</li>
-                <li><strong>Secciones de sabores:</strong> Cada color tiene su propia sección con diseño neobrutalista.</li>
-                <li><strong>Subpáginas de información:</strong> Páginas detalladas para cada sabor (rojo.html, naranja.html, etc.).</li>
-                <li><strong>Página de información del proyecto:</strong> Esta página con los detalles del trabajo realizado.</li>
-                <li><strong>Estilos CSS:</strong> Archivo centralizado (styles.css) con diseño neobrutalista y variables CSS.</li>
+                <li><strong>Página principal (<code>index.html</code>):</strong> <em>Hero section</em> con navegación
+                    por <u>colores</u> y <i>slider</i> de equipo.</li>
+                <li><strong>Secciones de sabores:</strong> Cada color tiene su propia sección con <mark>diseño
+                        neobrutalista</mark>.</li>
+                <li><strong>Subpáginas de información:</strong> Páginas detalladas para cada sabor
+                    (<code>rojo.html</code>, <code>naranja.html</code>, etc.).</li>
+                <li><strong>Página de información del proyecto:</strong> Esta página con los <em>detalles</em> del
+                    trabajo realizado.</li>
+                <li><strong>Estilos CSS:</strong> Archivo centralizado (<code>styles.css</code>) con diseño
+                    neobrutalista y <u>variables CSS</u>.</li>
             </ul>
         </section>
 
         <section class="panel">
             <h2>TECNOLOGÍAS UTILIZADAS</h2>
             <ul>
-                <li><strong>HTML5:</strong> Estructura semántica y accesible del contenido.</li>
-                <li><strong>CSS3:</strong> Estilos avanzados con variables CSS, grid, flexbox y animaciones.</li>
-                <li><strong>Diseño neobrutalista:</strong> Bordes gruesos, sombras duras y colores vibrantes.</li>
-                <li><strong>Sin JavaScript:</strong> Slider funcional usando solo CSS (inputs radio + labels).</li>
-                <li><strong>Responsive design:</strong> Adaptación a diferentes tamaños de pantalla.</li>
+                <li><strong>HTML<sup>5</sup>:</strong> <em>Estructura semántica</em> y <u>accesible</u> del contenido.
+                </li>
+                <li><strong>CSS<sub>3</sub>:</strong> Estilos avanzados con variables CSS, <i>grid</i>, <i>flexbox</i> y
+                    <mark>animaciones</mark>.</li>
+                <li><strong>Diseño neobrutalista:</strong> <u>Bordes gruesos</u>, <i>sombras duras</i> y colores
+                    vibrantes.</li>
+                <li><strong>Sin JavaScript:</strong> <em>Slider funcional</em> usando solo CSS
+                    (<code>inputs radio + labels</code>).</li>
+                <li><strong>Responsive design:</strong> Adaptación a diferentes <small>tamaños de pantalla</small>.</li>
             </ul>
+        </section>
+
+        <section class="panel">
+            <h2>INSPIRACIONES</h2>
+            <p>
+                Durante el desarrollo del proyecto, nos inspiramos en diferentes referencias de diseño neobrutalista y
+                estilos visuales que influyeron en nuestra creación. A continuación, algunas páginas que nos sirvieron
+                de
+                referencia:
+            </p>
+            <div class="iframe-container">
+                <div class="iframe-wrapper">
+                    <div class="iframe-title">Persona 5 — Visual Design & UI</div>
+                    <iframe src="https://www.gameuidatabase.com/gameData.php?id=618"
+                        title="Persona 5 Official"></iframe>
+                </div>
+                <div class="iframe-wrapper">
+                    <div class="iframe-title">Brutalist Websites — Galería de Diseño</div>
+                    <iframe src="https://brutalistwebsites.com" title="Brutalist Websites"></iframe>
+                </div>
+                <div class="iframe-wrapper">
+                    <div class="iframe-title">Neumorphism.io — Componentes Neobrutalistas</div>
+                    <iframe src="https://matifandy8.github.io/NeoBrutalismCSS/docs.html"
+                        title="Neumorphism Components"></iframe>
+                </div>
+            </div>
         </section>
 
         <a href="../index.html" class="back">← Volver al índice</a>

@@ -1,250 +1,259 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<meta name="author" content="Ferran Cutillas Castillo">
-<title>Naranja - Cítricos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="author" content="Ferran Cutillas Castillo">
+    <title>Naranja - Cítricos</title>
 
-<style>
-:root {
-    --naranja: #FF7A00;
-    --texto: #fff;
-}
+    <style>
+        :root {
+            --naranja: #FF7A00;
+            --texto: #fff;
+        }
 
-body {
-    background: linear-gradient(180deg, var(--naranja), #cc5f00);
-    font-family: "Impact", "Arial Black", sans-serif;
-    margin: 0 auto;
-    padding: 2rem;
-    color: var(--texto);
-    font-weight: bolder;
-}
+        body {
+            background: linear-gradient(180deg, var(--naranja), #cc5f00);
+            font-family: "Impact", "Arial Black", sans-serif;
+            margin: 0 auto;
+            padding: 2rem;
+            color: var(--texto);
+            font-weight: bolder;
+            cursor: url(../images/cursors/default.cur), auto;
+        }
 
-.page {
-    max-width: 1200px;
-    margin: 0 auto;
-    background: #fff;
-    color: #000;
-    border: 12px solid #000;
-    box-shadow: 25px 25px 0 #000;
-    padding: 3rem;
-}
+        .page {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            color: #000;
+            border: 12px solid #000;
+            box-shadow: 25px 25px 0 #000;
+            padding: 3rem;
+        }
 
-.title-container {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    font-weight: normal;
-}
+        .title-container {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            font-weight: normal;
+        }
 
-.tag {
-    display: inline-block;
-    padding: 0.7rem 1.4rem;
-    background: var(--naranja);
-    border: 6px solid #000;
-    color: #fff;
-    font-size: 1.3rem;
-    box-shadow: 8px 8px 0 #000;
-    transform: rotate(2deg);
-}
+        .tag {
+            display: inline-block;
+            padding: 0.7rem 1.4rem;
+            background: var(--naranja);
+            border: 6px solid #000;
+            color: #fff;
+            font-size: 1.3rem;
+            box-shadow: 8px 8px 0 #000;
+            transform: rotate(2deg);
+        }
 
-h1 {
-    font-size: 5rem;
-    letter-spacing: -2px;
-    margin: 0 0;
-}
+        h1 {
+            font-size: 5rem;
+            letter-spacing: -2px;
+            margin: 0 0;
+        }
 
-h2 {
-    font-size: 2rem;
-    letter-spacing: -3px;
-    margin-bottom: 1rem;
-    border-bottom: 5px solid #000;
-    margin: 0 0;
-}
+        h2 {
+            font-size: 2rem;
+            letter-spacing: -3px;
+            margin-bottom: 1rem;
+            border-bottom: 5px solid #000;
+            margin: 0 0;
+        }
 
-.image-banner {
-    width: 100%;
-    height: 170px;
-    border: 10px solid #000;
-    box-shadow: 12px 12px 0 #000;
-    margin: 2rem auto;
-}
+        .image-banner {
+            width: 100%;
+            height: 170px;
+            border: 10px solid #000;
+            box-shadow: 12px 12px 0 #000;
+            margin: 2rem auto;
+        }
 
-.image-banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+        .image-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-.panel {
-    background: #fff;
-    border: 6px solid #000;
-    padding: 2rem 2rem;
-    margin-top: 2rem;
-    box-shadow: 10px 10px 0 #000;
-    font-family: Arial, sans-serif;
-}
+        .panel {
+            background: #fff;
+            border: 6px solid #000;
+            padding: 2rem 2rem;
+            margin-top: 2rem;
+            box-shadow: 10px 10px 0 #000;
+            font-family: Arial, sans-serif;
+        }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
-}
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
 
-th, td {
-    border: 5px solid #000;
-    padding: 1rem;
-    text-align: left;
-    background: #fff;
-}
+        th,
+        td {
+            border: 5px solid #000;
+            padding: 1rem;
+            text-align: left;
+            background: #fff;
+        }
 
-th {
-    background: var(--naranja);
-    color: #fff;
-}
+        th {
+            background: var(--naranja);
+            color: #fff;
+        }
 
-.img-container {
-    margin-top: 1.5rem;
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-}
+        .img-container {
+            margin-top: 1.5rem;
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+        }
 
-.img-container img {
-    width: 180px;
-    height: 120px;
-    object-fit: cover;
-    border: 4px solid #000;
-    box-shadow: 6px 6px 0 #000;
-    transition: transform 0.1s ease;
-}
+        .img-container img {
+            width: 180px;
+            height: 120px;
+            object-fit: cover;
+            border: 4px solid #000;
+            box-shadow: 6px 6px 0 #000;
+            transition: transform 0.1s ease;
+        }
 
-.img-container img:hover {
-    transform: scale(1.2) rotate(2deg);
-}
+        .img-container img:hover {
+            transform: scale(1.2) rotate(2deg);
+        }
 
-.back {
-    display: inline-block;
-    margin-top: 2rem;
-    padding: 1rem 2rem;
-    background: #000;
-    color: #fff;
-    border: 6px solid #fff;
-    text-decoration: none;
-    box-shadow: 10px 10px 0 #000;
-    transition: transform 0.1s ease;
-}
+        .back {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background: #000;
+            color: #fff;
+            border: 6px solid #fff;
+            text-decoration: none;
+            box-shadow: 10px 10px 0 #000;
+            transition: transform 0.1s ease;
+        }
 
-.back:hover {
-    transform: translateY(7px) rotate(-2deg);
-    background-color: #fff;
-    color: #000;
-    border: 6px solid #000;
-}
-</style>
+        .back:hover {
+            transform: translateY(7px) rotate(-2deg);
+            background-color: #fff;
+            color: #000;
+            border: 6px solid #000;
+        }
+    </style>
 </head>
 
 <body>
-<div class="page">
+    <div class="page">
 
-<div class="title-container">
-    <span class="tag">NARANJA - CÍTRICOS</span>
-    <h1>CÍTRICOS</h1>
-</div>
+        <div class="title-container">
+            <span class="tag">NARANJA - CÍTRICOS</span>
+            <h1>CÍTRICOS</h1>
+        </div>
 
-<p class="title-container">
-    UN SABOR ENERGÉTICO Y REFRESCANTE QUE APORTA UN TOQUE ÁCIDO INCONFUNDIBLE.
-</p>
+        <p class="title-container">
+            UN SABOR ENERGÉTICO Y REFRESCANTE QUE APORTA UN TOQUE ÁCIDO INCONFUNDIBLE.
+        </p>
 
-<div class="image-banner">
-    <img src="../images/citricos/naranjas.png" alt="Chuches cítricas">
-</div>
+        <div class="image-banner">
+            <img src="../images/citricos/naranjas.png" alt="Chuches cítricas">
+        </div>
 
-<section class="panel">
-    <h2>DESCRIPCIÓN</h2>
-    <p>
-        Las chuches de cítricos destacan por su combinación perfecta entre dulzor y un toque ácido que despierta
-        todos los sentidos. Su aroma fresco recuerda a naranjas recién exprimidas, aportando una explosión de 
-        vitalidad en cada mordisco. Estas golosinas suelen encontrarse en formas de rodajas, caramelos duros,
-        ositos y gominolas espolvoreadas en azúcar ácido. Su sabor es perfecto para quienes buscan una experiencia
-        más refrescante y menos empalagosa.
-    </p>
-</section>
+        <section class="panel">
+            <h2>DESCRIPCIÓN</h2>
+            <p>
+                Las chuches de cítricos destacan por su combinación perfecta entre dulzor y un toque ácido que despierta
+                todos los sentidos. Su aroma fresco recuerda a naranjas recién exprimidas, aportando una explosión de
+                vitalidad en cada mordisco. Estas golosinas suelen encontrarse en formas de rodajas, caramelos duros,
+                ositos y gominolas espolvoreadas en azúcar ácido. Su sabor es perfecto para quienes buscan una
+                experiencia
+                más refrescante y menos empalagosa.
+            </p>
+        </section>
 
-<section class="panel">
-    <h2>CURIOSIDADES SOBRE LOS CÍTRICOS</h2>
-    <ul>
-        <li>Las chuches cítricas suelen incluir aromas de naranja, mandarina y limón.</li>
-        <li>El sabor cítrico realza la sensación de frescura en el paladar.</li>
-        <li>Son uno de los sabores preferidos para mezclas ácidas.</li>
-        <li>El naranja se asocia con energía, juventud y dinamismo.</li>
-    </ul>
-</section>
+        <section class="panel">
+            <h2>CURIOSIDADES SOBRE LOS CÍTRICOS</h2>
+            <ul>
+                <li>Las chuches cítricas suelen incluir aromas de naranja, mandarina y limón.</li>
+                <li>El sabor cítrico realza la sensación de frescura en el paladar.</li>
+                <li>Son uno de los sabores preferidos para mezclas ácidas.</li>
+                <li>El naranja se asocia con energía, juventud y dinamismo.</li>
+            </ul>
+        </section>
 
-<section class="panel">
-    <h2>PERFIL DE SABOR DETALLADO</h2>
-    <table>
-        <tr>
-            <th>ATRIBUTO</th>
-            <th>VALOR</th>
-            <th>DESCRIPCIÓN</th>
-        </tr>
-        <tr>
-            <td>Dulzor</td>
-            <td>⭐⭐</td>
-            <td>Equilibrado para no opacar el toque cítrico.</td>
-        </tr>
-        <tr>
-            <td>Acidez</td>
-            <td>⭐⭐⭐⭐⭐</td>
-            <td>La característica más distintiva de este sabor.</td>
-        </tr>
-        <tr>
-            <td>Aroma</td>
-            <td>⭐⭐⭐⭐</td>
-            <td>Intenso, refrescante y fácilmente reconocible.</td>
-        </tr>
-        <tr>
-            <td>Frescura</td>
-            <td>⭐⭐⭐⭐⭐</td>
-            <td>Un toque cítrico, frutal y vibrante en cada bocado.</td>
-        </tr>
-    </table>
-</section>
+        <section class="panel">
+            <h2>PERFIL DE SABOR DETALLADO</h2>
+            <table>
+                <tr>
+                    <th>ATRIBUTO</th>
+                    <th>VALOR</th>
+                    <th>DESCRIPCIÓN</th>
+                </tr>
+                <tr>
+                    <td>Dulzor</td>
+                    <td>⭐⭐</td>
+                    <td>Equilibrado para no opacar el toque cítrico.</td>
+                </tr>
+                <tr>
+                    <td>Acidez</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                    <td>La característica más distintiva de este sabor.</td>
+                </tr>
+                <tr>
+                    <td>Aroma</td>
+                    <td>⭐⭐⭐⭐</td>
+                    <td>Intenso, refrescante y fácilmente reconocible.</td>
+                </tr>
+                <tr>
+                    <td>Frescura</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                    <td>Un toque cítrico, frutal y vibrante en cada bocado.</td>
+                </tr>
+            </table>
+        </section>
 
-<section class="panel">
-    <h2>TIPOS DE CHUCHES CÍTRICAS</h2>
-    <ul>
-        <li><strong><u>Gajos espolvoreados</u>:</strong> clásicas gominolas con azúcar ácido.</li>
-        <li><strong><u>Caramelos de limón</u>:</strong> siempre presentes en casa de la abula, alivian ligeramente la tos.</li>
-        <li><strong><u>Cortezas escarchada</u>:</strong> cortezas cubiertas con una capa crujiente de azúcar cristalizado.</li>
-        <li><strong><u>Sugus</u>:</strong> Clásicos dulces blandos, generalmete cítricos (¿Porqué era azul el de piña?).</li>
-        <li><strong><u>Caramelos de limón</u>:</strong> dulces tradicionales, duros por fuera y rellenos de azucar ácido por dentro.</li>
-    </ul>
+        <section class="panel">
+            <h2>TIPOS DE CHUCHES CÍTRICAS</h2>
+            <ul>
+                <li><strong><u>Gajos espolvoreados</u>:</strong> clásicas gominolas con azúcar ácido.</li>
+                <li><strong><u>Caramelos de limón</u>:</strong> siempre presentes en casa de la abula, alivian
+                    ligeramente la tos.</li>
+                <li><strong><u>Cortezas escarchada</u>:</strong> cortezas cubiertas con una capa crujiente de azúcar
+                    cristalizado.</li>
+                <li><strong><u>Sugus</u>:</strong> Clásicos dulces blandos, generalmete cítricos (¿Porqué era azul el de
+                    piña?).</li>
+                <li><strong><u>Caramelos de limón</u>:</strong> dulces tradicionales, duros por fuera y rellenos de
+                    azucar ácido por dentro.</li>
+            </ul>
 
-    <div class="img-container">
-        <img src="../images/citricos/gajos.png" alt="gajos">
-        <img src="../images/citricos/caramelos.png" alt="caramelos_respirol">
-        <img src="../images/citricos/naranja_escarchada.png" alt="corteazas">
-        <img src="../images/citricos/sugus.png" alt="sugus">
-        <img src="../images/citricos/limones.png" alt="caramelos_limon">
+            <div class="img-container">
+                <img src="../images/citricos/gajos.png" alt="gajos">
+                <img src="../images/citricos/caramelos.png" alt="caramelos_respirol">
+                <img src="../images/citricos/naranja_escarchada.png" alt="corteazas">
+                <img src="../images/citricos/sugus.png" alt="sugus">
+                <img src="../images/citricos/limones.png" alt="caramelos_limon">
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>COMBINACIONES RECOMENDADAS</h2>
+            <ul>
+                <li>Gominolas cítricas + chuches de cola: mezcla refrescante y clásica.</li>
+                <li>Naranja + limón: combinación ultraácida para valientes.</li>
+                <li>Rodajas cítricas + chocolate negro: contraste sofisticado.</li>
+                <li>Caramelos de naranja + regaliz negro: sabor retro muy particular.</li>
+                <li>Gominolas cítricas + fresas: mezcla dulce-ácida equilibrada.</li>
+            </ul>
+        </section>
+
+        <a href="../index.html#naranja" class="back">← Volver al índice</a>
+
     </div>
-</section>
-
-<section class="panel">
-    <h2>COMBINACIONES RECOMENDADAS</h2>
-    <ul>
-        <li>Gominolas cítricas + chuches de cola: mezcla refrescante y clásica.</li>
-        <li>Naranja + limón: combinación ultraácida para valientes.</li>
-        <li>Rodajas cítricas + chocolate negro: contraste sofisticado.</li>
-        <li>Caramelos de naranja + regaliz negro: sabor retro muy particular.</li>
-        <li>Gominolas cítricas + fresas: mezcla dulce-ácida equilibrada.</li>
-    </ul>
-</section>
-
-<a href="../index.html#naranja" class="back">← Volver al índice</a>
-
-</div>
 </body>
+
 </html>

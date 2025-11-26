@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="author" content="Carlos Ordonez Diaz">
+    <title>Menta - Sabor Verde</title>
+
+    <style>
+        :root {
+            --verde-menta: #00E676;
+            --texto: #fff;
+        }
+
+        body {
+            background: linear-gradient(180deg, var(--verde-menta), #00a85a);
+            font-family: "Impact", "Arial Black", sans-serif;
+            margin: 0 auto;
+            padding: 2rem;
+            color: var(--texto);
+            font-weight: bolder;
+            cursor: url(../images/cursors/default.cur), auto;
+        }
+
+        .page {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            color: #000;
+            border: 12px solid #000;
+            box-shadow: 25px 25px 0 #000;
+            padding: 3rem;
+        }
+
+        .title-container {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            font-weight: normal;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.7rem 1.4rem;
+            background: var(--verde-menta);
+            border: 6px solid #000;
+            color: #fff;
+            font-size: 1.3rem;
+            box-shadow: 8px 8px 0 #000;
+            transform: rotate(2deg);
+        }
+
+        h1 {
+            font-size: 5rem;
+            letter-spacing: -2px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 2rem;
+            letter-spacing: -3px;
+            margin-bottom: 1rem;
+            border-bottom: 5px solid #000;
+            margin: 0;
+        }
+
+        .image-banner {
+            width: 100%;
+            height: 200px;
+            border: 10px solid #000;
+            box-shadow: 12px 12px 0 #000;
+            margin: 2rem auto;
+        }
+
+        .image-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .panel {
+            background: #fff;
+            border: 6px solid #000;
+            padding: 2rem 2rem;
+            margin-top: 2rem;
+            box-shadow: 10px 10px 0 #000;
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th,
+        td {
+            border: 5px solid #000;
+            padding: 1rem;
+            text-align: left;
+            background: #fff;
+        }
+
+        th {
+            background: var(--verde-menta);
+            color: #fff;
+        }
+
+        .img-container {
+            margin-top: 1.5rem;
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+        }
+
+        .img-container img {
+            width: 180px;
+            height: 120px;
+            object-fit: cover;
+            border: 4px solid #000;
+            box-shadow: 6px 6px 0 #000;
+            transition: transform 0.1s ease;
+        }
+
+        .img-container img:hover {
+            transform: scale(1.2) rotate(2deg);
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background: #000;
+            color: #fff;
+            border: 6px solid #fff;
+            text-decoration: none;
+            box-shadow: 10px 10px 0 #000;
+            transition: transform 0.1s ease;
+        }
+
+        .back:hover {
+            transform: translateY(7px) rotate(-2deg);
+            background-color: #fff;
+            color: #000;
+            border: 6px solid #000;
+        }
+
+        .opiniones .op {
+            border-left: 10px solid var(--verde-menta);
+            padding-left: 1rem;
+            margin: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+
+        <div class="title-container">
+            <span class="tag">VERDE - MENTA</span>
+            <h1>MENTA</h1>
+        </div>
+
+        <p class="title-container">
+            FRESCA, REFRESCANTE Y CON UN TOQUE ÚNICO QUE DESPIERTA LOS SENTIDOS.
+        </p>
+
+        <div class="image-banner">
+            <img src="../images/menta/menta_banner.png" alt="Plantas de Menta">
+        </div>
+
+        <section class="panel">
+            <h2>DESCRIPCIÓN</h2>
+            <p>
+                El sabor menta es una explosión refrescante que limpia el paladar y aporta una sensación de frescor
+                incomparable. Su aroma intenso y su sabor frío hacen que cada bocado sea estimulante. Desde caramelos
+                duros hasta gominolas cristalizadas, la menta aporta una experiencia vibrante y llena de energía.
+            </p>
+        </section>
+
+        <section class="panel">
+            <h2>CURIOSIDADES SOBRE LA MENTA</h2>
+            <ul>
+                <li>La menta se usa desde la antigüedad por su efecto refrescante.</li>
+                <li>Es uno de los sabores favoritos en caramelos y chicles.</li>
+                <li>Su color verde se asocia a frescura, limpieza y naturaleza.</li>
+                <li>Existen múltiples variedades: menta piperita, hierbabuena, menta verde...</li>
+            </ul>
+        </section>
+
+        <section class="panel">
+            <h2>PERFIL DE SABOR DETALLADO</h2>
+            <table>
+                <tr>
+                    <th><b>ATRIBUTO</b></th>
+                    <th><b>VALOR</b></th>
+                    <th><b>DESCRIPCIÓN</b></th>
+                </tr>
+                <tr>
+                    <td><b>Frescura</b></td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                    <td>Un frescor potente y persistente.</td>
+                </tr>
+                <tr>
+                    <td><b>Dulzor</b></td>
+                    <td>⭐⭐</td>
+                    <td>Generalmente suave para no opacar la frescura.</td>
+                </tr>
+                <tr>
+                    <td><b>Intensidad aromática</b></td>
+                    <td>⭐⭐⭐⭐</td>
+                    <td>Aroma herbal fuerte y característico.</td>
+                </tr>
+                <tr>
+                    <td><b>Suavidad</b></td>
+                    <td>⭐⭐⭐</td>
+                    <td>Equilibrio entre frescor y textura agradable.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="panel">
+            <h2>TIPOS DE CHUCHES DE MENTA</h2>
+            <ul>
+                <li><strong><u>Caramelos de menta</u>:</strong> los clásicos caramelos refrescantes.</li>
+                <li><strong><u>Gominolas mentoladas</u>:</strong> textura suave con un toque frío.</li>
+                <li><strong><u>Chicles de menta</u>:</strong> el formato más popular por su frescor duradero.</li>
+                <li><strong><u>Pastillas mentoladas</u>:</strong> pequeñas, aromáticas e intensamente refrescantes.</li>
+            </ul>
+
+            <div class="img-container">
+                <img src="../images/menta/caramelos_menta.png" alt="caramelos de menta">
+                <img src="../images/menta/gominolas_menta.png" alt="gominolas mentoladas">
+                <img src="../images/menta/chicles_menta.png" alt="chicles de menta">
+                <img src="../images/menta/pastillas_menta.png" alt="pastillas mentoladas">
+                <img src="../images/menta/halls_menta.jpg" alt="halls menta">
+            </div>
+        </section>
+
+        <section class="panel opiniones">
+            <h2>OPINIONES DE CONSUMIDORES</h2>
+            <div class="op"><strong>Belén (★★★★★):</strong> “La sensación refrescante es incomparable.”</div>
+            <div class="op"><strong>Roberto (★★★★):</strong> “Perfectas después de comer, limpian el paladar.”</div>
+            <div class="op"><strong>Jorge (★★★★★):</strong> “El mejor sabor si quieres algo fresco y ligero.”</div>
+        </section>
+
+        <a href="../index.html#verde" class="back">← Volver al índice</a>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="author" content="Carlos Ordonez Diaz">
+    <title>Uva - Sabor Morado</title>
+
+    <style>
+        :root {
+            --morado-uva: #4f398b;
+            --texto: #fff;
+        }
+
+        body {
+            background: linear-gradient(180deg, var(--morado-uva), #3b3152);
+            font-family: "Impact", "Arial Black", sans-serif;
+            margin: 0 auto;
+            padding: 2rem;
+            color: var(--texto);
+            font-weight: bolder;
+            cursor: url(../images/cursors/default.cur), auto;
+        }
+
+        .page {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            color: #000;
+            border: 12px solid #000;
+            box-shadow: 25px 25px 0 #000;
+            padding: 3rem;
+        }
+
+        .title-container {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            font-weight: normal;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.7rem 1.4rem;
+            background: var(--morado-uva);
+            border: 6px solid #000;
+            color: #fff;
+            font-size: 1.3rem;
+            box-shadow: 8px 8px 0 #000;
+            transform: rotate(2deg);
+        }
+
+        h1 {
+            font-size: 5rem;
+            letter-spacing: -2px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 2rem;
+            letter-spacing: -3px;
+            margin-bottom: 1rem;
+            border-bottom: 5px solid #000;
+            margin: 0;
+        }
+
+        .image-banner {
+            width: 100%;
+            height: 200px;
+            border: 10px solid #000;
+            box-shadow: 12px 12px 0 #000;
+            margin: 2rem auto;
+        }
+
+        .image-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .panel {
+            background: #fff;
+            border: 6px solid #000;
+            padding: 2rem 2rem;
+            margin-top: 2rem;
+            box-shadow: 10px 10px 0 #000;
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th,
+        td {
+            border: 5px solid #000;
+            padding: 1rem;
+            text-align: left;
+            background: #fff;
+        }
+
+        th {
+            background: var(--morado-uva);
+            color: #fff;
+        }
+
+        .img-container {
+            margin-top: 1.5rem;
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+        }
+
+        .img-container img {
+            width: 180px;
+            height: 120px;
+            object-fit: cover;
+            border: 4px solid #000;
+            box-shadow: 6px 6px 0 #000;
+            transition: transform 0.1s ease;
+        }
+
+        .img-container img:hover {
+            transform: scale(1.2) rotate(2deg);
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background: #000;
+            color: #fff;
+            border: 6px solid #fff;
+            text-decoration: none;
+            box-shadow: 10px 10px 0 #000;
+            transition: transform 0.1s ease;
+        }
+
+        .back:hover {
+            transform: translateY(7px) rotate(-2deg);
+            background-color: #fff;
+            color: #000;
+            border: 6px solid #000;
+        }
+
+        .opiniones .op {
+            border-left: 10px solid var(--morado-uva);
+            padding-left: 1rem;
+            margin: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+
+        <div class="title-container">
+            <span class="tag">MORADO - UVA</span>
+            <h1>UVA</h1>
+        </div>
+
+        <p class="title-container">
+            UN SABOR INTENSO, AROMÁTICO Y LLENO DE PERSONALIDAD. EL FAVORITO DE QUIENES BUSCAN ALGO DIFERENTE.
+        </p>
+
+        <div class="image-banner">
+            <img src="../images/uva/banner_uva.jpeg" alt="Plantas de Uva">
+        </div>
+
+        <section class="panel">
+            <h2>DESCRIPCIÓN</h2>
+            <p>
+                El sabor a uva destaca por su aroma profundo y su dulzor característico, diferente a cualquier otra
+                fruta.
+                En cada chuche se concentra un sabor intenso, ligeramente afrutado y muy reconocible.
+                Este sabor suele tener una esencia envolvente que recuerda a bebidas aromáticas y caramelos clásicos.
+                Es perfecto para quienes buscan algo dulce con un perfil más elegante y sofisticado.
+            </p>
+        </section>
+
+        <section class="panel">
+            <h2>CURIOSIDADES SOBRE LA UVA</h2>
+            <ul>
+                <li>Es uno de los sabores artificiales más emblemáticos del siglo XX.</li>
+                <li>Muy común en caramelos duros y chicles de larga duración.</li>
+                <li>El color morado se asocia con creatividad y misterio.</li>
+                <li>El aroma a uva suele ser uno de los más fuertes en cualquier surtido.</li>
+            </ul>
+        </section>
+
+        <section class="panel">
+            <h2>PERFIL DE SABOR DETALLADO</h2>
+            <table>
+                <tr>
+                    <th><b>ATRIBUTO</b></th>
+                    <th><b>VALOR</b></th>
+                    <th><b>DESCRIPCIÓN</b></th>
+                </tr>
+                <tr>
+                    <td><b>Dulzor</b></td>
+                    <td>⭐⭐⭐⭐</td>
+                    <td>Dulzor marcado pero equilibrado.</td>
+                </tr>
+                <tr>
+                    <td><b>Acidez</b></td>
+                    <td>⭐</td>
+                    <td>Muy ligera, más centrado en lo aromático.</td>
+                </tr>
+                <tr>
+                    <td><b>Intensidad aromática</b></td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                    <td>Aroma profundo y muy característico.</td>
+                </tr>
+                <tr>
+                    <td><b>Suavidad</b></td>
+                    <td>⭐⭐⭐</td>
+                    <td>Menos cremosa, más intensa.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="panel">
+            <h2>TIPOS DE CHUCHES DE UVA</h2>
+            <ul>
+                <li><strong><u>Caramelos duros</u>:</strong> sabor potente y muy aromático.</li>
+                <li><strong><u>Chicles</u>:</strong> clásicos, con aroma persistente.</li>
+                <li><strong><u>Gominolas moradas</u>:</strong> texturas suaves y aromáticas.</li>
+                <li><strong><u>Piruletas de uva</u>:</strong> dulces, frutales y muy intensas.</li>
+                <li><strong><u>Mini uvas</u>:</strong> gomitas pequeñas en forma de racimo.</li>
+            </ul>
+
+            <div class="img-container">
+                <img src="../images/uva/bol_chuches_uva.png" alt="bol_chuches_uva">
+                <img src="../images/uva/chuches_uva.webp" alt="chuches_uva">
+                <img src="../images/uva/fini_uva.jpg" alt="fini_uva">
+                <img src="../images/uva/gominolas_uva.jpg" alt="gominolas_uva">
+                <img src="../images/uva/ositos_uva.png" alt="ositos_uva">
+            </div>
+        </section>
+
+        <section class="panel opiniones">
+            <h2>OPINIONES DE CONSUMIDORES</h2>
+            <div class="op"><strong>Marta (★★★★★):</strong> “El sabor más aromático, un clásico que nunca falla.”</div>
+            <div class="op"><strong>Ramón (★★★★):</strong> “Muy intenso, perfecto si te gustan los sabores fuertes.”
+            </div>
+            <div class="op"><strong>Sofía (★★★★★):</strong> “Mis favoritas desde pequeña. El olor es irresistible.”
+            </div>
+        </section>
+
+        <a href="../index.html#morado" class="back">← Volver al índice</a>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="author" content="Carlos Ordonez Diaz">
+    <title>Chicle - Sabor Rosa</title>
+
+    <style>
+        :root {
+            --chicle: #FF4081;
+            --texto: #fff;
+        }
+
+        body {
+            background: linear-gradient(180deg, var(--chicle), #ff1f70);
+            font-family: "Impact", "Arial Black", sans-serif;
+            margin: 0 auto;
+            padding: 2rem;
+            color: var(--texto);
+            font-weight: bolder;
+            cursor: url(../images/cursors/default.cur), auto;
+        }
+
+        .page {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            color: #000;
+            border: 12px solid #000;
+            box-shadow: 25px 25px 0 #000;
+            padding: 3rem;
+        }
+
+        .title-container {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            font-weight: normal;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.7rem 1.4rem;
+            background: var(--chicle);
+            border: 6px solid #000;
+            color: #fff;
+            font-size: 1.3rem;
+            box-shadow: 8px 8px 0 #000;
+            transform: rotate(2deg);
+        }
+
+        h1 {
+            font-size: 5rem;
+            letter-spacing: -2px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 2rem;
+            letter-spacing: -3px;
+            margin-bottom: 1rem;
+            border-bottom: 5px solid #000;
+            margin: 0;
+        }
+
+        .image-banner {
+            width: 100%;
+            height: 200px;
+            border: 10px solid #000;
+            box-shadow: 12px 12px 0 #000;
+            margin: 2rem auto;
+        }
+
+        .image-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .panel {
+            background: #fff;
+            border: 6px solid #000;
+            padding: 2rem 2rem;
+            margin-top: 2rem;
+            box-shadow: 10px 10px 0 #000;
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th,
+        td {
+            border: 5px solid #000;
+            padding: 1rem;
+            text-align: left;
+            background: #fff;
+        }
+
+        th {
+            background: var(--chicle);
+            color: #fff;
+        }
+
+        .img-container {
+            margin-top: 1.5rem;
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+        }
+
+        .img-container img {
+            width: 180px;
+            height: 120px;
+            object-fit: cover;
+            border: 4px solid #000;
+            box-shadow: 6px 6px 0 #000;
+            transition: transform 0.1s ease;
+        }
+
+        .img-container img:hover {
+            transform: scale(1.2) rotate(2deg);
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background: #000;
+            color: #fff;
+            border: 6px solid #fff;
+            text-decoration: none;
+            box-shadow: 10px 10px 0 #000;
+            transition: transform 0.1s ease;
+        }
+
+        .back:hover {
+            transform: translateY(7px) rotate(-2deg);
+            background-color: #fff;
+            color: #000;
+            border: 6px solid #000;
+        }
+
+        .opiniones .op {
+            border-left: 10px solid var(--chicle);
+            padding-left: 1rem;
+            margin: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+
+        <div class="title-container">
+            <span class="tag">ROSA - CHICLE</span>
+            <h1>CHICLE</h1>
+        </div>
+
+        <p class="title-container">
+            UN SABOR DULCE, AROMÁTICO Y DIVERTIDO. EL FAVORITO DE QUIENES BUSCAN ALGO JUGOSO Y CLÁSICO.
+        </p>
+
+        <div class="image-banner">
+            <img src="../images/chicle/chicle_banner.png" alt="Chicles">
+        </div>
+
+        <section class="panel">
+            <h2>DESCRIPCIÓN</h2>
+            <p>
+                El sabor a chicle es icónico: dulce, suave y aromático, con ese toque que recuerda a los clásicos
+                chicles de feria.
+                Cada chuche ofrece una experiencia divertida y alegre, perfecta para cualquier amante de los dulces con
+                personalidad.
+            </p>
+        </section>
+
+        <section class="panel">
+            <h2>CURIOSIDADES SOBRE EL CHICLE</h2>
+            <ul>
+                <li>Uno de los sabores más populares en chicles y caramelos desde los años 80.</li>
+                <li>Muy utilizado en gominolas, piruletas y chicles de larga duración.</li>
+                <li>El color rosa se asocia con diversión y energía.</li>
+                <li>Su aroma es muy reconocible y nostálgico.</li>
+            </ul>
+        </section>
+
+        <section class="panel">
+            <h2>PERFIL DE SABOR DETALLADO</h2>
+            <table>
+                <tr>
+                    <th><b>ATRIBUTO</b></th>
+                    <th><b>VALOR</b></th>
+                    <th><b>DESCRIPCIÓN</b></th>
+                </tr>
+                <tr>
+                    <td><b>Dulzor</b></td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                    <td>Dulzor intenso y agradable.</td>
+                </tr>
+                <tr>
+                    <td><b>Acidez</b></td>
+                    <td>⭐</td>
+                    <td>Muy ligera, predominando lo dulce.</td>
+                </tr>
+                <tr>
+                    <td><b>Intensidad aromática</b></td>
+                    <td>⭐⭐⭐⭐</td>
+                    <td>Aroma dulce y característico de chicle.</td>
+                </tr>
+                <tr>
+                    <td><b>Suavidad</b></td>
+                    <td>⭐⭐⭐</td>
+                    <td>Textura agradable y masticable.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="panel">
+            <h2>TIPOS DE CHUCHES DE CHICLE</h2>
+            <ul>
+                <li><strong><u>Caramelos duros</u>:</strong> sabor dulce y clásico.</li>
+                <li><strong><u>Chicles</u>:</strong> suaves y aromáticos.</li>
+                <li><strong><u>Gominolas rosas</u>:</strong> textura masticable y frutal.</li>
+                <li><strong><u>Piruletas</u>:</strong> dulces y llamativas.</li>
+                <li><strong><u>Mini chicles</u>:</strong> gomitas pequeñas con sabor a chicle.</li>
+            </ul>
+
+            <div class="img-container">
+                <img src="../images/chicle/caramelo_chicle.png" alt="caramelo_chicle">
+                <img src="../images/chicle/chicle.png" alt="chicle">
+                <img src="../images/chicle/gominola_chicle.png" alt="gominola_chicle">
+                <img src="../images/chicle/piruleta_chicle.png" alt="piruleta_chicle">
+                <img src="../images/chicle/mini_chicles.png" alt="mini_chicles">
+            </div>
+        </section>
+
+        <section class="panel opiniones">
+            <h2>OPINIONES DE CONSUMIDORES</h2>
+            <div class="op"><strong>Olga (★★★★★):</strong> “El sabor más dulce y divertido, no me canso nunca.”</div>
+            <div class="op"><strong>Juan (★★★★):</strong> “Muy frutal, recuerda a los chicles de la infancia.”</div>
+            <div class="op"><strong>Nora (★★★★★):</strong> “Mis favoritas de siempre. Color y sabor irresistibles.”
+            </div>
+        </section>
+
+        <a href="../index.html#rosa" class="back">← Volver al índice</a>
+
+    </div>
+</body>
+
+</html>

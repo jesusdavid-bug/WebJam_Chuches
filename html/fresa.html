@@ -1,258 +1,264 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<meta name="author" content="Ferran Cutillas Castillo">
-<title>Fresa - Sabor Rojo</title>
-<link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="author" content="Ferran Cutillas Castillo">
+    <title>Fresa - Sabor Rojo</title>
+    <link rel="stylesheet" href="css/styles.css">
 
-<style>
-:root {
-    --rojo_fresa: #FF1744;
-    --texto: #fff;
-}
+    <style>
+        :root {
+            --rojo_fresa: #96001e;
+            --texto: #fff;
+        }
 
-body {
-    background: linear-gradient(180deg, var(--rojo_fresa), #b30f3f);
-    font-family: "Impact", "Arial Black", sans-serif;
-    margin: 0 auto;
-    padding: 2rem;
-    color: var(--texto);
-    font-weight: bolder;
-}
+        body {
+            background: linear-gradient(180deg, var(--rojo_fresa), #570000);
+            font-family: "Impact", "Arial Black", sans-serif;
+            margin: 0 auto;
+            padding: 2rem;
+            color: var(--texto);
+            font-weight: bolder;
+            cursor: url(../images/cursors/default.cur), auto;
+        }
 
-.page {
-    max-width: 1200px;
-    margin: 0 auto;
-    background: #fff;
-    color: #000;
-    border: 12px solid #000;
-    box-shadow: 25px 25px 0 #000;
-    padding: 3rem;
-}
+        .page {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            color: #000;
+            border: 12px solid #000;
+            box-shadow: 25px 25px 0 #000;
+            padding: 3rem;
+        }
 
-.title-container {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    font-weight: normal;
-}
+        .title-container {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            font-weight: normal;
+        }
 
-.tag {
-    display: inline-block;
-    padding: 0.7rem 1.4rem;
-    background: var(--rojo_fresa);
-    border: 6px solid #000;
-    color: #fff;
-    font-size: 1.3rem;
-    box-shadow: 8px 8px 0 #000;
-    transform: rotate(2deg);
-}
+        .tag {
+            display: inline-block;
+            padding: 0.7rem 1.4rem;
+            background: var(--rojo_fresa);
+            border: 6px solid #000;
+            color: #fff;
+            font-size: 1.3rem;
+            box-shadow: 8px 8px 0 #000;
+            transform: rotate(2deg);
+        }
 
-h1 {
-    font-size: 5rem;
-    letter-spacing: -2px;
-    margin: 0 0;
-}
+        h1 {
+            font-size: 5rem;
+            letter-spacing: -2px;
+            margin: 0 0;
+        }
 
-h2 {
-    font-size: 2rem;
-    letter-spacing: -3px;
-    margin-bottom: 1rem;
-    border-bottom: 5px solid #000;
-    margin: 0 0;
-}
+        h2 {
+            font-size: 2rem;
+            letter-spacing: -3px;
+            margin-bottom: 1rem;
+            border-bottom: 5px solid #000;
+            margin: 0 0;
+        }
 
-.image-banner {
-    width: 100%;
-    height: 200px;
-    border: 10px solid #000;
-    box-shadow: 12px 12px 0 #000;
-    margin: 2rem auto;
-}
+        .image-banner {
+            width: 100%;
+            height: 200px;
+            border: 10px solid #000;
+            box-shadow: 12px 12px 0 #000;
+            margin: 2rem auto;
+        }
 
-.image-banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+        .image-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-.panel {
-    background: #fff;
-    border: 6px solid #000;
-    padding: 2rem 2rem;
-    margin-top: 2rem;
-    box-shadow: 10px 10px 0 #000;
-    font-family: Arial, sans-serif;
-}
+        .panel {
+            background: #fff;
+            border: 6px solid #000;
+            padding: 2rem 2rem;
+            margin-top: 2rem;
+            box-shadow: 10px 10px 0 #000;
+            font-family: Arial, sans-serif;
+        }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
-}
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
 
-th, td {
-    border: 5px solid #000;
-    padding: 1rem;
-    text-align: left;
-    background: #fff;
-}
+        th,
+        td {
+            border: 5px solid #000;
+            padding: 1rem;
+            text-align: left;
+            background: #fff;
+        }
 
-th {
-    background: var(--rojo_fresa);
-    color: #fff;
-}
+        th {
+            background: var(--rojo_fresa);
+            color: #fff;
+        }
 
-.img-container {
-    margin-top: 1.5rem;
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-}
+        .img-container {
+            margin-top: 1.5rem;
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+        }
 
-.img-container img {
-    width: 180px;
-    height: 120px;
-    object-fit: cover;
-    border: 4px solid #000;
-    box-shadow: 6px 6px 0 #000;
-    transition: transform 0.1s ease;
-}
+        .img-container img {
+            width: 180px;
+            height: 120px;
+            object-fit: cover;
+            border: 4px solid #000;
+            box-shadow: 6px 6px 0 #000;
+            transition: transform 0.1s ease;
+        }
 
-.img-container img:hover {
-    transform: scale(1.2) rotate(2deg);
-}
+        .img-container img:hover {
+            transform: scale(1.2) rotate(2deg);
+        }
 
-.back {
-    display: inline-block;
-    margin-top: 2rem;
-    padding: 1rem 2rem;
-    background: #000;
-    color: #fff;
-    border: 6px solid #fff;
-    text-decoration: none;
-    box-shadow: 10px 10px 0 #000;
-    transition: transform 0.1s ease;
-}
+        .back {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background: #000;
+            color: #fff;
+            border: 6px solid #fff;
+            text-decoration: none;
+            box-shadow: 10px 10px 0 #000;
+            transition: transform 0.1s ease;
+        }
 
-.back:hover {
-    transform: translateY(7px) rotate(-2deg);
-    background-color: #fff;
-    color: #000;
-    border: 6px solid #000;
-}
+        .back:hover {
+            transform: translateY(7px) rotate(-2deg);
+            background-color: #fff;
+            color: #000;
+            border: 6px solid #000;
+        }
 
-.opiniones .op {
-    border-left: 10px solid var(--rojo_fresa);
-    padding-left: 1rem;
-    margin: 0.5rem;
-}
-</style>
+        .opiniones .op {
+            border-left: 10px solid var(--rojo_fresa);
+            padding-left: 1rem;
+            margin: 0.5rem;
+        }
+    </style>
 </head>
 
 <body>
-<div class="page">
+    <div class="page">
 
-<div class="title-container">
-    <span class="tag">ROJO - FRESA</span>
-    <h1>FRESA</h1>
-</div>
+        <div class="title-container">
+            <span class="tag">ROJO - FRESA</span>
+            <h1>FRESA</h1>
+        </div>
 
-<p class="title-container">
-    EL SABOR MÁS ICÓNICO DE LAS CHUCHES: DULCE, NOSTÁLGICO Y SIEMPRE PRESENTE.
-</p>
+        <p class="title-container">
+            EL SABOR MÁS ICÓNICO DE LAS CHUCHES: DULCE, NOSTÁLGICO Y SIEMPRE PRESENTE.
+        </p>
 
-<div class="image-banner">
-    <img src="../images/fresa/fresas.png" alt="Gominolas sabor fresa">
-</div>
+        <div class="image-banner">
+            <img src="../images/fresa/fresas.png" alt="Gominolas sabor fresa">
+        </div>
 
-<section class="panel">
-    <h2>DESCRIPCIÓN</h2>
-    <p>
-        La chuche de fresa es un clásico que nunca pasa de moda. Su sabor combina un dulzor intenso con un toque
-        sutil de acidez que despierta el paladar desde el primer bocado. La textura suave y ligeramente
-        masticable permite disfrutar de cada instante, mientras su aroma recuerda a fresas frescas recién
-        cortadas. Este sabor es el favorito de muchas generaciones y está presente en multitud de formas:
-        gominolas, caramelos blandos, piruletas y chicles, haciendo que cada experiencia sea una explosión
-        frutal inolvidable.
-    </p>
-</section>
+        <section class="panel">
+            <h2>DESCRIPCIÓN</h2>
+            <p>
+                La chuche de fresa es un clásico que nunca pasa de moda. Su sabor combina un dulzor intenso con un toque
+                sutil de acidez que despierta el paladar desde el primer bocado. La textura suave y ligeramente
+                masticable permite disfrutar de cada instante, mientras su aroma recuerda a fresas frescas recién
+                cortadas. Este sabor es el favorito de muchas generaciones y está presente en multitud de formas:
+                gominolas, caramelos blandos, piruletas y chicles, haciendo que cada experiencia sea una explosión
+                frutal inolvidable.
+            </p>
+        </section>
 
-<section class="panel">
-    <h2>CURIOSIDADES SOBRE LA FRESA</h2>
-    <ul>
-        <li>El sabor de fresa es uno de los más antiguos en la industria de las chuches.</li>
-        <li>Está presente en el 80% de las bolsas surtidas.</li>
-        <li>Existen versiones naturales y artificiales del aroma.</li>
-        <li>El color rojo se asocia con energía y pasión.</li>
-    </ul>
-</section>
+        <section class="panel">
+            <h2>CURIOSIDADES SOBRE LA FRESA</h2>
+            <ul>
+                <li>El sabor de fresa es uno de los más antiguos en la industria de las chuches.</li>
+                <li>Está presente en el 80% de las bolsas surtidas.</li>
+                <li>Existen versiones naturales y artificiales del aroma.</li>
+                <li>El color rojo se asocia con energía y pasión.</li>
+            </ul>
+        </section>
 
-<section class="panel">
-    <h2>PERFIL DE SABOR DETALLADO</h2>
-    <table>
-        <tr>
-            <th><b>ATRIBUTO</b></th>
-            <th><b>VALOR</b></th>
-            <th><b>DESCRIPCIÓN</b></th>
-        </tr>
-        <tr>
-            <td><b>Dulzor</b></td>
-            <td>⭐⭐⭐⭐</td>
-            <td>Intenso y dominante desde el primer mordisco.</td>
-        </tr>
-        <tr>
-            <td><b>Acidez</b></td>
-            <td>⭐⭐</td>
-            <td>Un toque de acidez para equilibrar lo dulce.</td>
-        </tr>
-        <tr>
-            <td><b>Intensidad aromática</b></td>
-            <td>⭐⭐⭐⭐⭐</td>
-            <td>Aroma muy reconocible y persistente.</td>
-        </tr>
-        <tr>
-            <td><b>Suavidad</b></td>
-            <td>⭐⭐⭐⭐</td>
-            <td>Sensación agradable en la boca.</td>
-        </tr>
-    </table>
-</section>
+        <section class="panel">
+            <h2>PERFIL DE SABOR DETALLADO</h2>
+            <table>
+                <tr>
+                    <th><b>ATRIBUTO</b></th>
+                    <th><b>VALOR</b></th>
+                    <th><b>DESCRIPCIÓN</b></th>
+                </tr>
+                <tr>
+                    <td><b>Dulzor</b></td>
+                    <td>⭐⭐⭐⭐</td>
+                    <td>Intenso y dominante desde el primer mordisco.</td>
+                </tr>
+                <tr>
+                    <td><b>Acidez</b></td>
+                    <td>⭐⭐</td>
+                    <td>Un toque de acidez para equilibrar lo dulce.</td>
+                </tr>
+                <tr>
+                    <td><b>Intensidad aromática</b></td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                    <td>Aroma muy reconocible y persistente.</td>
+                </tr>
+                <tr>
+                    <td><b>Suavidad</b></td>
+                    <td>⭐⭐⭐⭐</td>
+                    <td>Sensación agradable en la boca.</td>
+                </tr>
+            </table>
+        </section>
 
-<section class="panel">
-    <h2>TIPOS DE CHUCHES DE FRESA</h2>
-    <ul>
-        <li><strong><u>Gominolas</u>:</strong> gominolas clásicas con forma y color de fresa.</li>
-        <li><strong><u>Regalices de fresa</u>:</strong> tiras o fragmentos masticables con sabor afrutado, generalmente rellenos.</li>
-        <li><strong><u>Picotas</u>:</strong> caramelos redondo con sabor intenso y rellenos de gelatina.</li>
-        <li><strong><u>Piruletas</u>:</strong> un clásico que nunca falla, olvidables en la guantera de cualquier coche.</li>
-        <li><strong><u>Besitos</u>:</strong> sabor fresa/nata sueave y clásico.</li>
-    </ul>
+        <section class="panel">
+            <h2>TIPOS DE CHUCHES DE FRESA</h2>
+            <ul>
+                <li><strong><u>Gominolas</u>:</strong> gominolas clásicas con forma y color de fresa.</li>
+                <li><strong><u>Regalices de fresa</u>:</strong> tiras o fragmentos masticables con sabor afrutado,
+                    generalmente rellenos.</li>
+                <li><strong><u>Picotas</u>:</strong> caramelos redondo con sabor intenso y rellenos de gelatina.</li>
+                <li><strong><u>Piruletas</u>:</strong> un clásico que nunca falla, olvidables en la guantera de
+                    cualquier coche.</li>
+                <li><strong><u>Besitos</u>:</strong> sabor fresa/nata sueave y clásico.</li>
+            </ul>
 
-    <div class="img-container">
-        <img src="../images/fresa/gominola_fresa.png" alt="gominola_fresa">
-        <img src="../images/fresa/regaliz_fresa.png" alt="regaliz_fresa">
-        <img src="../images/fresa/picotas.png" alt="picota">
-        <img src="../images/fresa/piruletas.png" alt="piruleta">
-        <img src="../images/fresa/besitos.png" alt="besitos">
+            <div class="img-container">
+                <img src="../images/fresa/gominola_fresa.png" alt="gominola_fresa">
+                <img src="../images/fresa/regaliz_fresa.png" alt="regaliz_fresa">
+                <img src="../images/fresa/picotas.png" alt="picota">
+                <img src="../images/fresa/piruletas.png" alt="piruleta">
+                <img src="../images/fresa/besitos.png" alt="besitos">
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>COMBINACIONES RECOMENDADAS</h2>
+            <ul>
+                <li>Gominolas de fresa + chicles de menta: un contraste refrescante y afrutado.</li>
+                <li>Caramelos de fresa + regalices de limón: mezcla dulce y ligeramente ácida.</li>
+                <li>Piruletas de fresa + chocolate blanco: sabor intenso y cremoso.</li>
+                <li>Besitos de fresa + caramelos ácidos: un equilibrio perfecto entre dulzor y acidez.</li>
+                <li>Gominolas de fresa + frutas deshidratadas: una experiencia más natural y frutal.</li>
+            </ul>
+        </section>
+
+        <a href="../index.html#fresa" class="back">← Volver al índice</a>
+
     </div>
-</section>
-
-<section class="panel">
-    <h2>COMBINACIONES RECOMENDADAS</h2>
-    <ul>
-        <li>Gominolas de fresa + chicles de menta: un contraste refrescante y afrutado.</li>
-        <li>Caramelos de fresa + regalices de limón: mezcla dulce y ligeramente ácida.</li>
-        <li>Piruletas de fresa + chocolate blanco: sabor intenso y cremoso.</li>
-        <li>Besitos de fresa + caramelos ácidos: un equilibrio perfecto entre dulzor y acidez.</li>
-        <li>Gominolas de fresa + frutas deshidratadas: una experiencia más natural y frutal.</li>
-    </ul>
-</section>
-
-<a href="../index.html#fresa" class="back">← Volver al índice</a>
-
-</div>
 </body>
+
 </html>

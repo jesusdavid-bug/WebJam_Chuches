@@ -1,3 +1,4 @@
+/* Estilos patrocinados por: Ferran Cutillas Castillo, Carlos Ordoñez Diaz, Jesús David Cosano */
 /* Paleta principal y configuraciones base */
 :root {
     --rojo-fresa: #81001a;
@@ -5,7 +6,7 @@
     --amarillo-limon: #FFD600;
     --verde-menta: #00E676;
     --azul-arandano: #2979FF;
-    --morado-uva: #7C4DFF;
+    --morado-uva: #3e1c9a;
     --rosa-chicle: #eda8bf;
     --blanco: #FFFFFF;
     --negro: #1A1A1A;
@@ -31,8 +32,8 @@ body {
     overflow-x: hidden;
 }
 
-/* Wrapper secciones */
-.section {
+/* Contenedor de secciones */
+.seccion {
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -43,8 +44,8 @@ body {
     overflow: hidden;
 }
 
-/* Hero section */
-.section-rainbow {
+/* Sección principal con arcoiris */
+.seccion-arcoiris {
     background: rgb(220, 203, 225);
     display: flex;
     flex-direction: column;
@@ -53,16 +54,16 @@ body {
     min-height: 100vh;
 }
 
-/* Header superior del hero */
-.hero-header {
+/* Encabezado de arriba */
+.encabezado-principal {
     display: flex;
     justify-content: flex-start;
     width: 100%;
     margin-bottom: 24px;
 }
 
-/* Título principal */
-.hero-slogan {
+/* Banner amarillo de arriba */
+.titulo-banner {
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
@@ -72,8 +73,8 @@ body {
     background: #FFEB3B;
 }
 
-/* Grid hero */
-.hero-main {
+/* Caja principal de dos columnas */
+.contenedor-principal {
     display: grid;
     grid-template-columns: 1fr 340px;
     gap: 32px;
@@ -81,12 +82,12 @@ body {
     width: 100%;
 }
 
-.hero-main-offset {
+.contenedor-principal-desplazado {
     margin-top: 40px;
 }
 
-/* Columna izquierda hero */
-.hero-left {
+/* Lado izquierdo */
+.lado-izquierdo {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -96,8 +97,8 @@ body {
     position: relative;
 }
 
-/* Doble borde decorativo */
-.hero-left::before {
+/* Barra amarilla decorativa */
+.lado-izquierdo::before {
     content: "";
     position: absolute;
     left: -12px;
@@ -106,8 +107,8 @@ body {
     border-left: 6px solid #FFE600;
 }
 
-/* Marca principal CHUCHES */
-.hero-brand {
+/* Título CHUCHES grande */
+.marca-grande {
     font-size: 180px;
     font-weight: 900;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -116,8 +117,8 @@ body {
     text-shadow: -4px 4px 0 var(--negro), -8px 8px 0 var(--amarillo-limon), -12px 12px 0 var(--morado-uva);
 }
 
-/* Selector de colores */
-.color-nav {
+/* Navegación de círculos de colores */
+.navegacion-colores {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
@@ -125,11 +126,11 @@ body {
     background: rgb(220, 203, 225);
 }
 
-.color-link {
+.enlace-color {
     text-decoration: none;
 }
 
-.color-circle {
+.circulo-color {
     width: 62px;
     height: 62px;
     border-radius: 50%;
@@ -138,7 +139,7 @@ body {
     transition: transform 0.2s ease;
 }
 
-.color-link:hover .color-circle {
+.enlace-color:hover .circulo-color {
     transform: translate(-3px, -3px);
 }
 
@@ -170,8 +171,8 @@ body {
     background: var(--rosa-chicle);
 }
 
-/* Columna derecha hero (slider) */
-.hero-right {
+/* Lado derecho con las tarjetas */
+.lado-derecho {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -180,8 +181,8 @@ body {
     margin-left: -40px;
 }
 
-/* Slider de equipo, referencia sacada de: https://codepen.io/rustcode/pen/MYYMrVQ */
-.worker-slider {
+/* Deslizador de tarjetas del equipo, referencia sacada de: https://codepen.io/rustcode/pen/MYYMrVQ */
+.deslizador-equipo {
     width: 100%;
     max-width: 320px;
     display: flex;
@@ -190,18 +191,18 @@ body {
     position: relative;
 }
 
-.worker-slider input {
+.deslizador-equipo input {
     position: absolute;
     opacity: 0;
 }
 
-.worker-cards {
+.tarjetas-equipo {
     position: relative;
     min-height: 420px;
 }
 
-/* Carta individual */
-.worker-card {
+/* Tarjeta individual de cada persona */
+.tarjeta-equipo {
     position: absolute;
     inset: 0;
     padding: 24px;
@@ -218,25 +219,25 @@ body {
     transition: opacity 0.35s ease, transform 0.35s ease;
 }
 
-.worker-highlight {
+.resaltado-equipo {
     width: 100%;
     height: 80px;
     border: 3px solid var(--negro);
 }
 
-.highlight-yellow {
+.resaltado-verde {
     background: var(--verde-menta);
 }
 
-.highlight-pink {
+.resaltado-rosa {
     background: #FF4FD8;
 }
 
-.highlight-cyan {
+.resaltado-cyan {
     background: #7CF4FF;
 }
 
-.worker-avatar {
+.avatar-equipo {
     width: 110px;
     height: 110px;
     border: 3px solid var(--negro);
@@ -248,7 +249,7 @@ body {
     overflow: hidden;
 }
 
-.worker-avatar span {
+.avatar-equipo span {
     width: 100%;
     height: 100%;
     display: flex;
@@ -256,44 +257,44 @@ body {
     justify-content: center;
 }
 
-.worker-avatar img {
+.avatar-equipo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
 
-.avatar-blue {
+.avatar-azul {
     background: #49A6FF;
 }
 
-.avatar-green {
+.avatar-verde {
     background: #6BFF83;
 }
 
-.avatar-yellow {
+.avatar-amarillo {
     background: #FFD447;
 }
 
-.worker-name {
+.nombre-equipo {
     font-size: 22px;
     font-weight: 800;
 }
 
-.worker-role {
+.rol-equipo {
     font-size: 14px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
 
-.worker-bio {
+.biografia-equipo {
     font-size: 14px;
     border: 2px dashed var(--negro);
     padding: 12px;
 }
 
-/* CTA de la carta */
-.worker-cta {
+/* Botón rosa de acción */
+.boton-accion {
     text-decoration: none;
     background: #FF1B89;
     color: var(--blanco);
@@ -304,21 +305,21 @@ body {
     transition: transform 0.2s ease;
 }
 
-.worker-cta:hover {
+.boton-accion:hover {
     transform: translate(-2px, -2px);
 }
 
 /* Alineación del botón Ver info con el primer círculo de navegación */
-.hero-left > .worker-cta {
+.lado-izquierdo>.boton-accion {
     margin-left: 16px;
 }
 
-.worker-nav {
+.navegacion-equipo {
     display: flex;
     justify-content: space-between;
 }
 
-.nav-btn {
+.boton-nav {
     display: none;
     width: 46px;
     height: 46px;
@@ -332,54 +333,56 @@ body {
     transition: transform 0.2s ease;
 }
 
-.nav-btn:hover {
+.boton-nav:hover {
     transform: translate(-2px, -2px);
 }
 
-.nav-left {
+.boton-izquierda {
     background: #FFE600;
     color: var(--negro);
 }
 
-.nav-right {
+.boton-derecha {
     background: #FFE600;
     color: var(--negro);
 }
 
-#worker-1:checked~.worker-cards .card-1,
-#worker-2:checked~.worker-cards .card-2,
-#worker-3:checked~.worker-cards .card-3 {
+#worker-1:checked~.tarjetas-equipo .card-1,
+#worker-2:checked~.tarjetas-equipo .card-2,
+#worker-3:checked~.tarjetas-equipo .card-3 {
     opacity: 1;
     transform: translateX(0);
 }
 
-#worker-1:checked~.worker-nav .nav-left-1,
-#worker-1:checked~.worker-nav .nav-right-1,
-#worker-2:checked~.worker-nav .nav-left-2,
-#worker-2:checked~.worker-nav .nav-right-2,
-#worker-3:checked~.worker-nav .nav-left-3,
-#worker-3:checked~.worker-nav .nav-right-3 {
+#worker-1:checked~.navegacion-equipo .boton-izquierda-1,
+#worker-1:checked~.navegacion-equipo .boton-derecha-1,
+#worker-2:checked~.navegacion-equipo .boton-izquierda-2,
+#worker-2:checked~.navegacion-equipo .boton-derecha-2,
+#worker-3:checked~.navegacion-equipo .boton-izquierda-3,
+#worker-3:checked~.navegacion-equipo .boton-derecha-3 {
     display: flex;
 }
 
-/* Bloques de sabores */
-.section-color {
-    --section-bg: var(--blanco);
-    --section-accent: var(--negro);
-    background: var(--section-bg);
+/* Secciones de cada sabor */
+.seccion-color {
+    --color-fondo: var(--blanco);
+    --color-destacado: var(--negro);
+    background: var(--color-fondo);
     padding: 60px 40px;
     display: flex;
     justify-content: center;
     position: relative;
+    border-top: 6px solid var(--negro);
+    border-bottom: 6px solid var(--negro);
 }
 
-.fx-grid {
+.cuadricula-efectos {
     width: 100%;
     max-width: 1200px;
 }
 
-/* Contenedor interno de cada sabor */
-.fx-content {
+/* Caja principal de cada sabor */
+.contenido-efectos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
@@ -390,44 +393,44 @@ body {
     position: relative;
 }
 
-/* Placa decorativa */
-.fx-content::before {
+/* Placa negra de arriba */
+.contenido-efectos::before {
     content: "";
     position: absolute;
     top: -18px;
     left: 24px;
     width: 110px;
     height: 20px;
-    background: var(--section-accent);
+    background: var(--color-destacado);
     border: 3px solid var(--negro);
     box-shadow: 8px 8px 0 var(--negro);
     display: block;
 }
 
-.fx-left,
-.fx-right {
+.izquierda-efectos,
+.derecha-efectos {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.fx-left {
+.izquierda-efectos {
     align-items: flex-start;
 }
 
-.fx-right {
+.derecha-efectos {
     align-items: flex-end;
     text-align: right;
 }
 
-/* Chips laterales */
-.fx-item {
+/* Etiquetas de palabras laterales */
+.elemento-efectos {
     border: 3px solid var(--negro);
     padding: 12px 16px;
     font-weight: 800;
     font-size: 18px;
     box-shadow: 6px 6px 0 var(--negro);
-    background: var(--section-accent);
+    background: var(--color-destacado);
     color: var(--blanco);
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -437,12 +440,12 @@ body {
     width: auto;
 }
 
-.fx-right .fx-item {
+.derecha-efectos .elemento-efectos {
     align-self: flex-end;
 }
 
-/* Panel central con título y CTA */
-.fx-center {
+/* Centro con el título */
+.centro-efectos {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -451,7 +454,7 @@ body {
     padding: 24px;
 }
 
-.fx-title {
+.titulo-efectos {
     font-size: 72px;
     font-weight: 900;
     margin: 0;
@@ -459,8 +462,8 @@ body {
     text-transform: uppercase;
 }
 
-/* Botón de cada sabor */
-.section-btn {
+/* Botón de explorar */
+.boton-seccion {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -468,69 +471,107 @@ body {
     padding: 12px 32px;
     border: 4px solid var(--negro);
     box-shadow: 8px 8px 0 var(--negro);
-    background: var(--section-accent);
+    background: var(--color-destacado);
     color: var(--blanco);
     text-decoration: none;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    transition: transform 0.1s ease;
 }
 
-.section-btn::after {
+.boton-seccion::after {
     content: "↗";
     font-size: 18px;
 }
 
-.section-btn:hover {
-    transform: translate(-3px, -3px);
+.boton-seccion:hover {
+    transform: translateY(7px) rotate(2deg);
 }
 
-.section-rojo {
-    --section-accent: var(--rojo-fresa);
-    --section-bg: linear-gradient(135deg, #6a0317, #b51236);
+.seccion-rojo {
+    --color-destacado: var(--rojo-fresa);
+    --color-fondo: linear-gradient(135deg, #87001b, #600015);
 }
 
 /* Fresa */
-.section-naranja {
-    --section-accent: var(--naranja-citrico);
-    --section-bg: linear-gradient(135deg, #FF6D00, #ff9c33);
+.seccion-naranja {
+    --color-destacado: var(--naranja-citrico);
+    --color-fondo: linear-gradient(135deg, #FF6D00, #ff9c33);
 }
 
-.section-amarillo {
-    --section-accent: var(--amarillo-limon);
-    --section-bg: linear-gradient(135deg, #FFD600, #ffec80);
+.seccion-amarillo {
+    --color-destacado: var(--amarillo-limon);
+    --color-fondo: linear-gradient(135deg, #FFD600, #ffec80);
 }
 
-.section-verde {
-    --section-accent: var(--verde-menta);
-    --section-bg: linear-gradient(135deg, #00E676, #5effb2);
+.seccion-verde {
+    --color-destacado: var(--verde-menta);
+    --color-fondo: linear-gradient(135deg, #00E676, #5effb2);
 }
 
-.section-azul {
-    --section-accent: var(--azul-arandano);
-    --section-bg: linear-gradient(135deg, #2979FF, #69a6ff);
+.seccion-azul {
+    --color-destacado: var(--azul-arandano);
+    --color-fondo: linear-gradient(135deg, #2979FF, #69a6ff);
 }
 
-.section-morado {
-    --section-accent: var(--morado-uva);
-    --section-bg: linear-gradient(135deg, #180747, #7c4dff);
+.seccion-morado {
+    --color-destacado: var(--morado-uva);
+    --color-fondo: linear-gradient(135deg, #180747, #7c4dff);
 }
 
-.section-rosa {
-    --section-accent: var(--rosa-chicle);
-    --section-bg: linear-gradient(135deg, #eda8bf, #ffcfe1);
+.seccion-rosa {
+    --color-destacado: var(--rosa-chicle);
+    --color-fondo: linear-gradient(135deg, #eda8bf, #ffcfe1);
 }
 
-.section-amarillo .fx-item,
-.section-amarillo .section-btn {
+.seccion-amarillo .elemento-efectos,
+.seccion-amarillo .boton-seccion {
     color: var(--negro);
 }
 
-/* Recursos y referencias empleados (adaptados al estilo neo-brutalista candy)
+/* Footer de estilo neobrutalista candy */
+footer {
+    background: rgb(220, 203, 225);
+    padding: 3rem 2rem;
+    text-align: center;
+    border-top: 8px solid var(--negro);
+    box-shadow: 0 -12px 0 var(--negro);
+}
 
-Hero neo-brutalista con grid + sombras:
-https://www.w3schools.com/css/css_grid.asp
-https://css-tricks.com/almanac/properties/t/text-shadow/
+footer p {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    color: var(--negro);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+footer a {
+    display: inline-block;
+    padding: 12px 24px;
+    background: var(--blanco);
+    color: var(--negro);
+    text-decoration: none;
+    font-size: 1.8rem;
+    border: 4px solid var(--negro);
+    box-shadow: 8px 8px 0 var(--negro);
+    transition: transform 0.5s ease;
+    font-weight: 800;
+}
+
+footer a i {
+    font-size: 1.8rem;
+}
+
+footer a:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 12px 12px 0 var(--negro);
+}
+
+/* Recursos y referencias empleados (adaptados al estilo neo-brutalista)
 
 Navegación de colores (chips circulares con box-shadow duro):
 https://www.w3schools.com/howto/howto_css_animate_buttons.asp
@@ -544,32 +585,6 @@ Tarjetas neobrutalistas con desplazamiento:
 https://uiverse.io/
 https://www.w3schools.com/cssref/css3_pr_box-shadow.php
 
-Secciones de sabores organizadas con grid responsivo:
-https://www.w3schools.com/css/css_grid_container.asp
-https://css-tricks.com/snippets/css/complete-guide-grid/
-
-Chips laterales y CTA con inline-flex:
-https://www.w3schools.com/css/css3_flexbox.asp
-https://www.smashingmagazine.com/2020/05/typography-accessibility/
-
-Fondos degradados personalizados por sabor:
-https://www.w3schools.com/css/css3_gradients.asp
-https://gradient.style/
-
-Variables CSS para paleta (root candy):
-https://www.w3schools.com/css/css3_variables.asp
-
-Transiciones suaves y microinteracciones:
-https://developer.mozilla.org/docs/Web/CSS/transition
-https://web.dev/animations-guide/
-
-Selectores :checked y hermanos (~) para el slider:
-https://www.w3schools.com/cssref/sel_checked.php
-https://www.w3schools.com/cssref/css_selectors.php
-
-Uso de labels asociados a inputs invisibles:
-https://www.w3schools.com/tags/tag_label.asp
-
 Inspiración neobrutalista (paletas dulces + layouts):
 https://neobrutalism.dev/
 https://nicelydone.club/tags/neobrutalism/
@@ -580,22 +595,140 @@ https://www.youtube.com/@programmingwithmosh
 https://www.youtube.com/@deivchoi
 https://www.youtube.com/@midudev
 
-Referencias adicionales:
-Iconografía y composiciones retro:
-https://www.behance.net/search/projects?search=neobrutalism
+EXPLICACIONES MÁS DETALLADAS DE LOS ESTILOS:
 
-Manual de branding candy y gradientes pastel:
-https://www.pinterest.com/search/pins/?q=candy%20neobrutalism
+1. Box-shadow y sombras duras desplazadas:
+   Los elementos neobrutalistas utilizan box-shadow con valores como "8px 8px 0 #000" para crear
+   sombras duras y desplazadas que dan profundidad sin suavidad. Esta técnica es fundamental
+   en el diseño neobrutalista.
+   Referencias:
+   https://developer.mozilla.org/es/docs/Web/CSS/box-shadow
+   https://css-tricks.com/almanac/properties/b/box-shadow/
 
-Snippets para botones con `:before` pseudo-elementos:
-https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-reference-guide
+2. Text-shadow múltiple para efectos 3D:
+   El título "CHUCHES" utiliza múltiples text-shadow superpuestos para crear un efecto de
+   profundidad y capas, simulando un efecto 3D sin usar transformaciones complejas.
+   Referencias:
+   https://css-tricks.com/almanac/properties/t/text-shadow/
+   https://developer.mozilla.org/es/docs/Web/CSS/text-shadow
 
-Tipografías bold-friendly para títulos:
-https://fonts.google.com/specimen/Archivo+Black
+3. Pseudo-elementos ::before y ::after:
+   Se utilizan para crear elementos decorativos sin añadir HTML extra, como las barras
+   laterales y placas decorativas en las secciones de sabores.
+   Referencias:
+   https://developer.mozilla.org/es/docs/Web/CSS/::before
+   https://css-tricks.com/almanac/selectors/b/before-and-after/
 
-Animaciones de hover inspiradas en “Pure CSS Neobrutal Hover”:
-https://codepen.io/search/pens?q=neobrutalism&limit=all&type=type-pens
+4. Variables CSS (Custom Properties):
+   Las variables en :root permiten mantener consistencia en la paleta de colores y facilitan
+   el mantenimiento del código. Cada color de sabor tiene su variable definida.
+   Referencias:
+   https://developer.mozilla.org/es/docs/Web/CSS/Using_CSS_custom_properties
+   https://www.w3schools.com/css/css3_variables.asp
 
-Microinteracciones para listas y chips:
-https://web.dev/learn/css/interaction/
+5. Transform y transiciones para microinteracciones:
+   Los elementos interactivos usan transform: translate() y rotate() para crear efectos de
+   "presionado" al hacer hover, manteniendo la estética neobrutalista con movimientos
+   bruscos pero controlados.
+   Referencias:
+   https://developer.mozilla.org/es/docs/Web/CSS/transform
+   https://css-tricks.com/almanac/properties/t/transform/
+
+6. Grid Layout para estructura:
+   El hero y las secciones de sabores utilizan CSS Grid para crear layouts complejos de
+   manera eficiente, permitiendo alineación precisa de elementos.
+   Referencias:
+   https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout
+   https://css-tricks.com/snippets/css/complete-guide-grid/
+
+7. Flexbox para alineación:
+   Se combina con Grid para alinear elementos dentro de contenedores, especialmente útil
+   para los chips de colores y los elementos de navegación.
+   Referencias:
+   https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout
+   https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+8. Letter-spacing y text-transform:
+   El uso de letter-spacing negativo en títulos grandes y text-transform: uppercase
+   crea la tipografía bold y impactante característica del neobrutalismo.
+   Referencias:
+   https://developer.mozilla.org/es/docs/Web/CSS/letter-spacing
+   https://developer.mozilla.org/es/docs/Web/CSS/text-transform
+
+9. Border-radius mínimo:
+   A diferencia de otros estilos, el neobrutalismo evita border-radius excesivo, usando
+   solo en círculos (50%) para los chips de navegación, manteniendo formas geométricas
+   duras y angulares.
+   Referencias:
+   https://developer.mozilla.org/es/docs/Web/CSS/border-radius
+
+10. Cursor personalizado:
+    Se utiliza un cursor personalizado (.cur) para mantener la estética retro y
+    personalizada del proyecto.
+    Referencias:
+    https://developer.mozilla.org/es/docs/Web/CSS/cursor
+
+11. Scroll-behavior smooth:
+    Permite desplazamiento suave entre secciones al hacer clic en los enlaces de
+    navegación, mejorando la experiencia de usuario.
+    Referencias:
+    https://developer.mozilla.org/es/docs/Web/CSS/scroll-behavior
+
+12. Selectores avanzados (:checked, ~):
+    El slider de trabajadores utiliza selectores :checked combinados con el selector
+    hermano (~) para cambiar el estado visual sin JavaScript.
+    Referencias:
+    https://developer.mozilla.org/es/docs/Web/CSS/:checked
+    https://developer.mozilla.org/es/docs/Web/CSS/General_sibling_combinator
+
+13. Gradientes lineales por sección:
+    Cada sección de sabor tiene su propio gradiente de fondo usando linear-gradient(),
+    creando identidad visual única manteniendo coherencia estructural.
+    Referencias:
+    https://developer.mozilla.org/es/docs/Web/CSS/gradient/linear-gradient
+    https://css-tricks.com/css3-gradients/
+
+14. Opacity y transform para transiciones:
+    Las tarjetas del slider usan opacity y transform combinados para crear transiciones
+    suaves de aparición/desaparición, técnica común en sliders CSS puros.
+    Referencias:
+    https://developer.mozilla.org/es/docs/Web/CSS/opacity
+
+15. Box-sizing: border-box:
+    Se aplica globalmente para que padding y border se incluyan en el ancho/alto total
+    de los elementos, facilitando el cálculo de dimensiones.
+    Referencias:
+    https://developer.mozilla.org/es/docs/Web/CSS/box-sizing
+
+16. Overflow control:
+    Se usa overflow: hidden en contenedores para controlar el contenido que se desborda
+    y mantener la estructura visual limpia.
+    Referencias:
+    https://developer.mozilla.org/es/docs/Web/CSS/overflow
+
+17. Position: absolute y relative:
+    Combinados para posicionar elementos decorativos y crear layouts complejos, como
+    las tarjetas del slider superpuestas.
+    Referencias:
+    https://developer.mozilla.org/es/docs/Web/CSS/position
+
+18. Object-fit para imágenes:
+    Las imágenes de los avatares usan object-fit: cover para mantener proporciones
+    correctas sin distorsión.
+    Referencias:
+    https://developer.mozilla.org/es/docs/Web/CSS/object-fit
+
+PALETA DE COLORES NEOBRUTALISTA:
+- Colores saturados y vibrantes para cada sabor
+- Alto contraste entre elementos (negro/blanco)
+- Fondo degradado global para cohesión visual
+- Variables CSS para fácil mantenimiento y consistencia
+
+PRINCIPIOS DE DISEÑO APLICADOS:
+- Bordes gruesos (3px-8px) en todos los elementos principales
+- Sombras duras sin blur (0px blur radius)
+- Formas geométricas simples y angulares
+- Tipografía bold y uppercase para impacto
+- Espaciado generoso pero estructurado
+- Colores planos sin degradados complejos (excepto fondos)
 */

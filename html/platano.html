@@ -1,251 +1,256 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<meta name="author" content="Ferran Cutillas Castillo">
-<title>Plátano - Sabor Amarillo</title>
-<link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="author" content="Ferran Cutillas Castillo">
+    <title>Plátano - Sabor Amarillo</title>
+    <link rel="stylesheet" href="css/styles.css">
 
-<style>
-:root {
-    --amarillo_limon: #FFEB3B;
-    --texto: #000;
-}
+    <style>
+        :root {
+            --amarillo_limon: #FFEB3B;
+            --texto: #000;
+        }
 
-body {
-    background: linear-gradient(180deg, var(--amarillo_limon), #c7b500);
-    font-family: "Impact", "Arial Black", sans-serif;
-    margin: 0 auto;
-    padding: 2rem;
-    color: var(--texto);
-    font-weight: bolder;
-}
+        body {
+            background: linear-gradient(180deg, var(--amarillo_limon), #c7b500);
+            font-family: "Impact", "Arial Black", sans-serif;
+            margin: 0 auto;
+            padding: 2rem;
+            color: var(--texto);
+            font-weight: bolder;
+            cursor: url(../images/cursors/default.cur), auto;
+        }
 
-.page {
-    max-width: 1200px;
-    margin: 0 auto;
-    background: #fff;
-    color: #000;
-    border: 12px solid #000;
-    box-shadow: 25px 25px 0 #000;
-    padding: 3rem;
-}
+        .page {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            color: #000;
+            border: 12px solid #000;
+            box-shadow: 25px 25px 0 #000;
+            padding: 3rem;
+        }
 
-.title-container {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    font-weight: normal;
-}
+        .title-container {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            font-weight: normal;
+        }
 
-.tag {
-    display: inline-block;
-    padding: 0.7rem 1.4rem;
-    background: var(--amarillo_limon);
-    border: 6px solid #000;
-    color: #000;
-    font-size: 1.3rem;
-    box-shadow: 8px 8px 0 #000;
-    transform: rotate(2deg);
-}
+        .tag {
+            display: inline-block;
+            padding: 0.7rem 1.4rem;
+            background: var(--amarillo_limon);
+            border: 6px solid #000;
+            color: #000;
+            font-size: 1.3rem;
+            box-shadow: 8px 8px 0 #000;
+            transform: rotate(2deg);
+        }
 
-h1 {
-    font-size: 5rem;
-    letter-spacing: -2px;
-    margin: 0 0;
-}
+        h1 {
+            font-size: 5rem;
+            letter-spacing: -2px;
+            margin: 0 0;
+        }
 
-h2 {
-    font-size: 2rem;
-    letter-spacing: -3px;
-    margin-bottom: 1rem;
-    border-bottom: 5px solid #000;
-    margin: 0 0;
-}
+        h2 {
+            font-size: 2rem;
+            letter-spacing: -3px;
+            margin-bottom: 1rem;
+            border-bottom: 5px solid #000;
+            margin: 0 0;
+        }
 
-.image-banner {
-    width: 100%;
-    height: 200px;
-    border: 10px solid #000;
-    box-shadow: 12px 12px 0 #000;
-    margin: 2rem auto;
-}
+        .image-banner {
+            width: 100%;
+            height: 200px;
+            border: 10px solid #000;
+            box-shadow: 12px 12px 0 #000;
+            margin: 2rem auto;
+        }
 
-.image-banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+        .image-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-.panel {
-    background: #fff;
-    border: 6px solid #000;
-    padding: 2rem 2rem;
-    margin-top: 2rem;
-    box-shadow: 10px 10px 0 #000;
-    font-family: Arial, sans-serif;
-}
+        .panel {
+            background: #fff;
+            border: 6px solid #000;
+            padding: 2rem 2rem;
+            margin-top: 2rem;
+            box-shadow: 10px 10px 0 #000;
+            font-family: Arial, sans-serif;
+        }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
-}
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
 
-th, td {
-    border: 5px solid #000;
-    padding: 1rem;
-    text-align: left;
-    background: #fff;
-}
+        th,
+        td {
+            border: 5px solid #000;
+            padding: 1rem;
+            text-align: left;
+            background: #fff;
+        }
 
-th {
-    background: var(--amarillo_limon);
-    color: #000;
-}
+        th {
+            background: var(--amarillo_limon);
+            color: #000;
+        }
 
-.img-container {
-    margin-top: 1.5rem;
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-}
+        .img-container {
+            margin-top: 1.5rem;
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+        }
 
-.img-container img {
-    width: 180px;
-    height: 120px;
-    object-fit: cover;
-    border: 4px solid #000;
-    box-shadow: 6px 6px 0 #000;
-    transition: transform 0.1s ease;
-}
+        .img-container img {
+            width: 180px;
+            height: 120px;
+            object-fit: cover;
+            border: 4px solid #000;
+            box-shadow: 6px 6px 0 #000;
+            transition: transform 0.1s ease;
+        }
 
-.img-container img:hover {
-    transform: scale(1.2) rotate(2deg);
-}
+        .img-container img:hover {
+            transform: scale(1.2) rotate(2deg);
+        }
 
-.back {
-    display: inline-block;
-    margin-top: 2rem;
-    padding: 1rem 2rem;
-    background: #000;
-    color: #fff;
-    border: 6px solid #fff;
-    text-decoration: none;
-    box-shadow: 10px 10px 0 #000;
-    transition: transform 0.1s ease;
-}
+        .back {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background: #000;
+            color: #fff;
+            border: 6px solid #fff;
+            text-decoration: none;
+            box-shadow: 10px 10px 0 #000;
+            transition: transform 0.1s ease;
+        }
 
-.back:hover {
-    transform: translateY(7px) rotate(-2deg);
-    background-color: #fff;
-    color: #000;
-    border: 6px solid #000;
-}
-</style>
+        .back:hover {
+            transform: translateY(7px) rotate(-2deg);
+            background-color: #fff;
+            color: #000;
+            border: 6px solid #000;
+        }
+    </style>
 </head>
 
 <body>
-<div class="page">
+    <div class="page">
 
-<div class="title-container">
-    <span class="tag">AMARILLO - PLÁTANO</span>
-    <h1>PLÁTANO</h1>
-</div>
+        <div class="title-container">
+            <span class="tag">AMARILLO - PLÁTANO</span>
+            <h1>PLÁTANO</h1>
+        </div>
 
-<p class="title-container">
-    EL SABOR MÁS SUAVE, CREMOSO Y DULCE: CLÁSICO, INCONFUNDIBLE Y MUY QUERIDO.
-</p>
+        <p class="title-container">
+            EL SABOR MÁS SUAVE, CREMOSO Y DULCE: CLÁSICO, INCONFUNDIBLE Y MUY QUERIDO.
+        </p>
 
-<div class="image-banner">
-    <img src="../images/platano/platanos.png" alt="Gominolas sabor plátano">
-</div>
+        <div class="image-banner">
+            <img src="../images/platano/platanos.png" alt="Gominolas sabor plátano">
+        </div>
 
-<section class="panel">
-    <h2>DESCRIPCIÓN</h2>
-    <p>
-        El sabor plátano es uno de los más icónicos dentro del mundo de las golosinas. Destaca por su
-        dulzor suave y una cremosidad muy característica que lo hace fácilmente reconocible. A diferencia
-        de otros sabores amarillos más ácidos, el plátano ofrece una experiencia dulce y envolvente,
-        perfecta para quienes buscan algo menos intenso pero muy aromático. Su aroma es potente y
-        delicioso, y suele estar asociado a chuches clásicas y muy queridas.
-    </p>
-</section>
+        <section class="panel">
+            <h2>DESCRIPCIÓN</h2>
+            <p>
+                El sabor plátano es uno de los más icónicos dentro del mundo de las golosinas. Destaca por su
+                dulzor suave y una cremosidad muy característica que lo hace fácilmente reconocible. A diferencia
+                de otros sabores amarillos más ácidos, el plátano ofrece una experiencia dulce y envolvente,
+                perfecta para quienes buscan algo menos intenso pero muy aromático. Su aroma es potente y
+                delicioso, y suele estar asociado a chuches clásicas y muy queridas.
+            </p>
+        </section>
 
-<section class="panel">
-    <h2>CURIOSIDADES SOBRE EL PLÁTANO</h2>
-    <ul>
-        <li>El sabor a plátano en chuches suele representar la variedad “Gros Michel”.</li>
-        <li>Su aroma es uno de los más fuertes y reconocibles incluso a distancia.</li>
-        <li>Las gominolas de plátano son un clásico desde hace más de 40 años.</li>
-        <li>Aunque es amarillo, no es ácido: destaca por su dulzura cremosa.</li>
-    </ul>
-</section>
+        <section class="panel">
+            <h2>CURIOSIDADES SOBRE EL PLÁTANO</h2>
+            <ul>
+                <li>El sabor a plátano en chuches suele representar la variedad “Gros Michel”.</li>
+                <li>Su aroma es uno de los más fuertes y reconocibles incluso a distancia.</li>
+                <li>Las gominolas de plátano son un clásico desde hace más de 40 años.</li>
+                <li>Aunque es amarillo, no es ácido: destaca por su dulzura cremosa.</li>
+            </ul>
+        </section>
 
-<section class="panel">
-    <h2>PERFIL DE SABOR DETALLADO</h2>
-    <table>
-        <tr>
-            <th><b>ATRIBUTO</b></th>
-            <th><b>VALOR</b></th>
-            <th><b>DESCRIPCIÓN</b></th>
-        </tr>
-        <tr>
-            <td><b>Dulzor</b></td>
-            <td>⭐⭐⭐</td>
-            <td>El sabor más dulce dentro de la familia amarilla.</td>
-        </tr>
-        <tr>
-            <td><b>Acidez</b></td>
-            <td>⭐</td>
-            <td>Mínima, casi inexistente.</td>
-        </tr>
-        <tr>
-            <td><b>Intensidad aromática</b></td>
-            <td>⭐⭐⭐⭐⭐</td>
-            <td>Aroma muy característico y reconocible.</td>
-        </tr>
-        <tr>
-            <td><b>Suavidad</b></td>
-            <td>⭐⭐⭐⭐⭐</td>
-            <td>Textura agradable y cremosa en la mayoría de formatos.</td>
-        </tr>
-    </table>
-</section>
+        <section class="panel">
+            <h2>PERFIL DE SABOR DETALLADO</h2>
+            <table>
+                <tr>
+                    <th><b>ATRIBUTO</b></th>
+                    <th><b>VALOR</b></th>
+                    <th><b>DESCRIPCIÓN</b></th>
+                </tr>
+                <tr>
+                    <td><b>Dulzor</b></td>
+                    <td>⭐⭐⭐</td>
+                    <td>El sabor más dulce dentro de la familia amarilla.</td>
+                </tr>
+                <tr>
+                    <td><b>Acidez</b></td>
+                    <td>⭐</td>
+                    <td>Mínima, casi inexistente.</td>
+                </tr>
+                <tr>
+                    <td><b>Intensidad aromática</b></td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                    <td>Aroma muy característico y reconocible.</td>
+                </tr>
+                <tr>
+                    <td><b>Suavidad</b></td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                    <td>Textura agradable y cremosa en la mayoría de formatos.</td>
+                </tr>
+            </table>
+        </section>
 
-<section class="panel">
-    <h2>TIPOS DE CHUCHES DE PLÁTANO</h2>
-    <ul>
-        <li><strong><u>Plátanos de goma clásicos</u>:</strong> el formato más querido y característico.</li>
-        <li><strong><u>Pitufos</u>:</strong> suevas y esponjosas gominolas con forma de plátano y color de pitufo.</li>
-        <li><strong><u>Rodajas</u>:</strong> Nubes con sabor y forma de rodaja de plátano.</li>
-        <li><strong><u>Platanos pelables</u>:</strong> menos comunes pero muy dulces e interactivas.</li>
-        <li><strong><u>Barritas de plátano</u>:</strong> combinan cremosidad con textura exterior firme.</li>
-    </ul>
+        <section class="panel">
+            <h2>TIPOS DE CHUCHES DE PLÁTANO</h2>
+            <ul>
+                <li><strong><u>Plátanos de goma clásicos</u>:</strong> el formato más querido y característico.</li>
+                <li><strong><u>Pitufos</u>:</strong> suevas y esponjosas gominolas con forma de plátano y color de
+                    pitufo.</li>
+                <li><strong><u>Rodajas</u>:</strong> Nubes con sabor y forma de rodaja de plátano.</li>
+                <li><strong><u>Platanos pelables</u>:</strong> menos comunes pero muy dulces e interactivas.</li>
+                <li><strong><u>Barritas de plátano</u>:</strong> combinan cremosidad con textura exterior firme.</li>
+            </ul>
 
-    <div class="img-container">
-        <img src="../images/platano/platanos_chuches.png" alt="platanos_chuche">
-        <img src="../images/platano/pitufos.png" alt="pitufos">
-        <img src="../images/platano/rodajas_platano.png" alt="rodajas_platano">
-        <img src="../images/platano/platanos_pelables.png" alt="platanos_pelables">
-        <img src="../images/platano/barritas_platano.png" alt="barritas_platano">
+            <div class="img-container">
+                <img src="../images/platano/platanos_chuches.png" alt="platanos_chuche">
+                <img src="../images/platano/pitufos.png" alt="pitufos">
+                <img src="../images/platano/rodajas_platano.png" alt="rodajas_platano">
+                <img src="../images/platano/platanos_pelables.png" alt="platanos_pelables">
+                <img src="../images/platano/barritas_platano.png" alt="barritas_platano">
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>COMBINACIONES RECOMENDADAS</h2>
+            <ul>
+                <li>Plátano + chocolate: una mezcla clásica y deliciosa.</li>
+                <li>Gominolas de plátano + fresa: combinación dulce y muy equilibrada.</li>
+                <li>Plátano + nata: potencia la cremosidad del sabor.</li>
+                <li>Plátano + caramelo: mezcla intensa y aromática.</li>
+                <li>Plátano + vainilla: aporta suavidad y aroma extra.</li>
+            </ul>
+        </section>
+
+        <a href="../index.html#amarillo" class="back">← Volver al índice</a>
+
     </div>
-</section>
-
-<section class="panel">
-    <h2>COMBINACIONES RECOMENDADAS</h2>
-    <ul>
-        <li>Plátano + chocolate: una mezcla clásica y deliciosa.</li>
-        <li>Gominolas de plátano + fresa: combinación dulce y muy equilibrada.</li>
-        <li>Plátano + nata: potencia la cremosidad del sabor.</li>
-        <li>Plátano + caramelo: mezcla intensa y aromática.</li>
-        <li>Plátano + vainilla: aporta suavidad y aroma extra.</li>
-    </ul>
-</section>
-
-<a href="../index.html#amarillo" class="back">← Volver al índice</a>
-
-</div>
 </body>
+
 </html>

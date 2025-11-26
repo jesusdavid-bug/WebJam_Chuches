@@ -573,24 +573,24 @@ footer a:hover {
 
 /* Clase para enlaces sin estilo (para emojis o texto normal) */
 .enlace-sin-estilo {
-    display: inline !important;
-    padding: 0 !important;
-    background: transparent !important;
-    color: inherit !important;
-    text-decoration: none !important;
-    font-size: inherit !important;
-    border: none !important;
-    box-shadow: none !important;
-    transition: none !important;
-    font-weight: inherit !important;
-    transform: none !important;
+    display: inline;
+    padding: 0;
+    background: transparent;
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    border: none;
+    box-shadow: none;
+    transition: none;
+    font-weight: inherit;
+    transform: none;
 }
 
 .enlace-sin-estilo:hover {
-    transform: none !important;
-    box-shadow: none !important;
-    background: transparent !important;
-    color: inherit !important;
+    transform: none;
+    box-shadow: none;
+    background: transparent;
+    color: inherit;
 }
 
 /* Recursos y referencias empleados (adaptados al estilo neo-brutalista)
